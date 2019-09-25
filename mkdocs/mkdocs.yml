@@ -1,0 +1,10 @@
+site_name: Uncrustify Rules Doc
+
+use_directory_urls: false
+
+nav:
+    - Home: index.md
+    - Spacing options:
+        - 'sp_cpp_lambda_assign': 'spacing_options/sp_cpp_lambda_assign.md'
+        - 'sp_cpp_lambda_paren': 'spacing_options/sp_cpp_lambda_paren.md'
+    - About: about.md
