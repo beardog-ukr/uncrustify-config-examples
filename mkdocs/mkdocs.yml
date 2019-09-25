@@ -7,6 +7,10 @@ nav:
     - Spacing options:
         - 'sp_cpp_lambda_assign': 'spacing_options/sp_cpp_lambda_assign.md'
         - 'sp_cpp_lambda_paren': 'spacing_options/sp_cpp_lambda_paren.md'
+    - Other options:
+        - 'code_width': 'other_options/code_width.md'
+        - 'cmt_width': 'other_options/cmt_width.md'
+
     - About: about.md
 
 theme: spacelab
