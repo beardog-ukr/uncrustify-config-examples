@@ -256,7 +256,7 @@ _compile() {
 }
 
 _clean_compiled() {
-  echo "This is '_clean_compiled' function"
+  echo "This is '_clean_compiled' function (not implemented yet)"
 }
 
 # #### #### #### #### #### #### #### #### #### #### #### #### #### ####
