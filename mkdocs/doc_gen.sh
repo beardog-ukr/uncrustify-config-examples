@@ -99,7 +99,9 @@ Usage:
   ${_ME} -h | --help
 
 Options:
-  -h --help  Display this help information.
+  -h --help     Display this help information.
+  -b --build    Build documentation
+  -d --docs     removes ../docs folder; copies generated folder there instead
 HEREDOC
 }
 
@@ -115,6 +117,7 @@ _USE_DEBUG=0
 
 # Initialize additional expected option variables.
 _BUILD=0
+_MOVE_GENERATED=0
 _SHORT_OPTION_WITH_PARAMETER=""
 _LONG_OPTION_WITH_PARAMETER=""
 
@@ -153,6 +156,9 @@ do
       ;;
     -b|--build)
       _BUILD=1
+      ;;
+    -d|--docs)
+      _MOVE_GENERATED=1
       ;;
     -o)
       _require_argument "${__option}" "${__maybe_param}"
@@ -196,6 +202,12 @@ _do_build() {
   fi
 
   mkdocs build --clean
+
+  if ((_MOVE_GENERATED)) 
+  then
+    rm -rf ../docs
+    mv ./site ../docs
+  fi
 
   # if [[ -n "${_SHORT_OPTION_WITH_PARAMETER}" ]]
   # then
