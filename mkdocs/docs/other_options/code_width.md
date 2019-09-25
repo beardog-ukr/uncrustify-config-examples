@@ -2,7 +2,9 @@
 
 Try to limit code width to N columns. Break line if it's too long.
 
-Possible values are 0 for no limits or integer value for some. Default configuration value is 0 (unlimited).
+Possible values are 0 for no limits or integer value for some. Also another integer configuration value (like `cmt_width`) may be used.
+
+Default configuration value is 0 (unlimited).
 
 # Examples
 
@@ -28,4 +30,4 @@ Note, the comment line is not broken, because comment lines are controlled with
 # See also
 
 * [cmt_width](cmt_width.md) - similar option but for comments
-* Special line breaking cases: [ls_for_split_full](ls_for_split_full.md), [ls_func_split_full](ls_for_split_full.md) and [ls_code_width](ls_for_split_full.md)
+* Special line breaking cases: [ls_for_split_full](ls_for_split_full.md), [ls_func_split_full](ls_func_split_full.md) and [ls_code_width](ls_code_width.md)
