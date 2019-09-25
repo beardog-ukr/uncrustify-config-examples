@@ -1,4 +1,4 @@
-site_name: Uncrustify Rules Doc
+site_name: Uncrustify Config Examples
 
 use_directory_urls: false
 
@@ -7,9 +7,10 @@ nav:
     - Spacing options:
         - 'sp_cpp_lambda_assign': 'spacing_options/sp_cpp_lambda_assign.md'
         - 'sp_cpp_lambda_paren': 'spacing_options/sp_cpp_lambda_paren.md'
+        - 'sp_not': 'spacing_options/sp_not.md'
     - Other options:
-        - 'code_width': 'other_options/code_width.md'
         - 'cmt_width': 'other_options/cmt_width.md'
+        - 'code_width': 'other_options/code_width.md'        
 
     - About: about.md
 
