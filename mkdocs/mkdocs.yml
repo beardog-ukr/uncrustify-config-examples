@@ -8,3 +8,5 @@ nav:
         - 'sp_cpp_lambda_assign': 'spacing_options/sp_cpp_lambda_assign.md'
         - 'sp_cpp_lambda_paren': 'spacing_options/sp_cpp_lambda_paren.md'
     - About: about.md
+
+theme: spacelab
