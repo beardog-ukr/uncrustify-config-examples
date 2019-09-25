@@ -12,7 +12,7 @@
         <link href="css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="css/font-awesome.min.css" rel="stylesheet">
         <link href="css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/color-brewer.min.css">
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -91,28 +91,36 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#welcome-to-mkdocs">Welcome to MkDocs</a></li>
+        <li class="main active"><a href="#uncrustify-configuration-examples">Uncrustify configuration examples</a></li>
             <li><a href="#commands">Commands</a></li>
-            <li><a href="#project-layout">Project layout</a></li>
+            <li><a href="#ready-configs-for-style-guides">Ready configs for style guides</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://mkdocs.org">mkdocs.org</a>.</p>
+<h1 id="uncrustify-configuration-examples">Uncrustify configuration examples</h1>
+<p>The <a href="https://github.com/uncrustify/uncrustify">uncrustify</a> is a tool that helps
+to format code according to some rules. </p>
+<p>There are more than six hundreds processing rules for now. This project aims 
+to provide definite examples for each rule. Also there will be provided 
+ready-to-use configurations for existing style guides.</p>
+<p>However right now only few examples are available.</p>
 <h2 id="commands">Commands</h2>
+<p>There are few groups of <em>uncrustify</em> configuration rules:</p>
 <ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs help</code> - Print this help message.</li>
+<li><em>Spacing options</em> </li>
+<li><em>Indenting options</em></li>
+<li><em>Newline adding and removing options</em></li>
+<li><em>Positioning options</em></li>
+<li><em>Line splitting options</em></li>
+<li><em>Code alignment options</em></li>
+<li><em>Comment modification options</em></li>
+<li><em>Code modifying options</em></li>
+<li><em>Preprocessor options</em></li>
+<li><em>Other options</em></li>
 </ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre></div>
+<h2 id="ready-configs-for-style-guides">Ready configs for style guides</h2>
+<p>Will be implemented later.</p></div>
         </div>
 
         <footer class="col-md-12">
@@ -121,7 +129,7 @@ docs/
         </footer>
         <script>
             var base_url = ".",
-                shortcuts = {"previous": 80, "help": 191, "next": 78, "search": 83};
+                shortcuts = {"search": 83, "help": 191, "previous": 80, "next": 78};
         </script>
         <script src="js/base.js" defer></script>
         <script src="search/main.js" defer></script>
@@ -195,5 +203,5 @@ docs/
 
 <!--
 MkDocs version : 1.0.4
-Build Date UTC : 2019-09-25 15:42:52
+Build Date UTC : 2019-09-25 18:12:35
 -->
