@@ -102,6 +102,8 @@ Options:
   -h --help     Display this help information.
   -b --build    Build documentation
   -d --docs     removes ../docs folder; copies generated folder there instead
+
+  Options '-b' and '-d' may be used together
 HEREDOC
 }
 
@@ -185,10 +187,22 @@ done
 # Program Functions
 ###############################################################################
 
+# _move_generated()
+#
+# Usage:
+#   _move_generated
+#
+# No arguments required.
+# Moves generated html files to the docs folder
+_move_generated() {
+  rm -rf ../docs
+  mv ./site ../docs
+}
+
 # _do_build()
 #
 # Usage:
-#   _do_build 
+#   _do_build
 #
 # No arguments required.
 # Calls mkdocs to make a clean build
@@ -197,16 +211,15 @@ _do_build() {
 
   _CURR_FOLDER=`pwd`
   if [[ ! ${_CURR_FOLDER} =~ ^.*mkdocs$ ]]
-  then 
+  then
     die "Current folder MUST be ./mkdocs"
   fi
 
   mkdocs build --clean
 
-  if ((_MOVE_GENERATED)) 
+  if ((_MOVE_GENERATED))
   then
-    rm -rf ../docs
-    mv ./site ../docs
+    _move_generated
   fi
 
   # if [[ -n "${_SHORT_OPTION_WITH_PARAMETER}" ]]
@@ -240,6 +253,12 @@ _main() {
   if ((_BUILD))
   then
     _do_build
+    exit 0
+  fi
+
+  if ((_MOVE_GENERATED))
+  then
+    _move_generated
     exit 0
   fi
 
