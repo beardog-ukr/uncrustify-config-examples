@@ -10,6 +10,7 @@ nav:
         - 'sp_not': 'spacing_options/sp_not.md'
     - Newline:
         - 'nl_if_brace': 'newline_options/nl_if_brace.md'
+        - 'nl_else_brace': 'newline_options/nl_else_brace.md'
     - Other options:
         - 'cmt_width': 'other_options/cmt_width.md'
         - 'code_width': 'other_options/code_width.md'
