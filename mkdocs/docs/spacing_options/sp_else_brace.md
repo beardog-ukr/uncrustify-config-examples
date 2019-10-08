@@ -1,6 +1,6 @@
-# sp_brace_else
+# sp_else_brace
 
-Add or remove space between `}` and `else` if on the same line
+Add or remove space between 'else' and '{' if on the same line.
 
 Possible values are _ignore_, _add_, _remove_ and _force_.
 
@@ -19,51 +19,29 @@ After
 ```
 if (x<y) {
   std::cout << "Also x is less than " << y << '\n';
-} else{
+}else {
   std::cout << "Also x is more (or equal) than " << y << '\n';
 }
 ```
-Here space is added to the left of `else`; the [sp_else_brace](sp_else_brace.md) may add space to the right
-
-## Force
-Before:
-```
-if (x<y)
-{
-  std::cout << "Also x is less than " << y << '\n';
-}     else {
-  std::cout << "Also x is more (or equal) than " << y << '\n';
-}
-```
-After
-```
-if (x<y)
-{
-  std::cout << "Also x is less than " << y << '\n';
-} else {
-  std::cout << "Also x is more (or equal) than " << y << '\n';
-}
-```
+Here space is added to the right of `else`; the [sp_brace_else](sp_brace_else.md) may add space to the left
 
 ## Remove
 Before
 ```
-if (x<y)
-{
+if (x<y) {
   std::cout << "Also x is less than " << y << '\n';
-}   else
-{
+}
+else      {
   std::cout << "Also x is more (or equal) than " << y << '\n';
 }
 ```
 
 After
 ```
-if (x<y)
-{
+if (x<y) {
   std::cout << "Also x is less than " << y << '\n';
-}else
-{
+}
+else{
   std::cout << "Also x is more (or equal) than " << y << '\n';
 }
 ```
