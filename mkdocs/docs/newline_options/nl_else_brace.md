@@ -55,4 +55,4 @@ else{
 
 * [nl_if_brace](nl_if_brace.md) - similar option but for `if`
 * [sp_else_brace](../spacing_options/sp_else_brace.md) - for space between `else` and `{`
-* [nl_brace_else](nl_brace_else) - for removing newline after `}` (and before `else`)
+* [nl_brace_else](nl_brace_else.md) - for removing newline after `}` (and before `else`)
