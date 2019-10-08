@@ -70,5 +70,5 @@ if (x<y)
 
 # See also
 
-* [nl_brace_else](../newline_options/nl_else_brace.md) - Add or remove newline between `}` and `else`.
+* [nl_brace_else](../newline_options/nl_brace_else.md) - Add or remove newline between `}` and `else`.
 * [nl_elseif_brace](../newline_options/nl_elseif_brace.md) - Add or remove newline between `else if` and `{`.

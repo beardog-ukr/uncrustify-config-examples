@@ -52,5 +52,5 @@ if (x<y)
 # See also
 
 * [nl_if_brace](nl_if_brace.md) - similar option but for `if`
-* [sp_brace_else](../spacing_options/sp_else_brace.md) - Add or remove space between `}` and `else` if on the same line
+* [sp_brace_else](../spacing_options/sp_brace_else.md) - Add or remove space between `}` and `else` if on the same line
 * [nl_else_brace](nl_else_brace.md)
