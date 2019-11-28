@@ -11,7 +11,7 @@ Note:
 
 ## Removing empty lines
 
-If config is `nl_max = 1` all the empty lines get removed emply line will be added:
+If config is `nl_max = 1` all the empty lines get removed:
 ```
 #include <iostream>
 

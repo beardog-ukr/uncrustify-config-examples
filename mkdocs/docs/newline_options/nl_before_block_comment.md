@@ -11,7 +11,7 @@ Note:
 
 # Examples
 
-If config is `nl_before_block_comment = 2` only one emply line will be added:
+If config is `nl_before_block_comment = 2` only one empty line will be added:
 ```
 #include <iostream>
 /* Some comment
