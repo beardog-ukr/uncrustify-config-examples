@@ -18,6 +18,7 @@ nav:
         - 'nl_else_brace': 'newline_options/nl_else_brace.md'
         - 'nl_if_brace': 'newline_options/nl_if_brace.md'
         - 'nl_max': 'newline_options/nl_max.md'
+        - 'nl_max_blank_in_func': 'newline_options/nl_max_blank_in_func.md'
     - Other options:
         - 'cmt_width': 'other_options/cmt_width.md'
         - 'code_width': 'other_options/code_width.md'
