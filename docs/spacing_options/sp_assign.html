@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>nl_brace_else - Uncrustify Config Examples</title>
+        <title>sp_assign - Uncrustify Config Examples</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -49,69 +49,69 @@
                             <li >
                                 <a href="../index.html">Home</a>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Spacing <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li >
-    <a href="../spacing_options/sp_angle_word.html">sp_angle_word</a>
+    <a href="sp_angle_word.html">sp_angle_word</a>
+</li>
+                                    
+<li class="active">
+    <a href="sp_assign.html">sp_assign</a>
 </li>
                                     
 <li >
-    <a href="../spacing_options/sp_assign.html">sp_assign</a>
+    <a href="sp_brace_else.html">sp_brace_else</a>
 </li>
                                     
 <li >
-    <a href="../spacing_options/sp_brace_else.html">sp_brace_else</a>
+    <a href="sp_cpp_lambda_assign.html">sp_cpp_lambda_assign</a>
 </li>
                                     
 <li >
-    <a href="../spacing_options/sp_cpp_lambda_assign.html">sp_cpp_lambda_assign</a>
+    <a href="sp_cpp_lambda_paren.html">sp_cpp_lambda_paren</a>
 </li>
                                     
 <li >
-    <a href="../spacing_options/sp_cpp_lambda_paren.html">sp_cpp_lambda_paren</a>
+    <a href="sp_else_brace.html">sp_else_brace</a>
 </li>
                                     
 <li >
-    <a href="../spacing_options/sp_else_brace.html">sp_else_brace</a>
+    <a href="sp_inside_fparens.html">sp_inside_fparens</a>
 </li>
                                     
 <li >
-    <a href="../spacing_options/sp_inside_fparens.html">sp_inside_fparens</a>
-</li>
-                                    
-<li >
-    <a href="../spacing_options/sp_not.html">sp_not</a>
+    <a href="sp_not.html">sp_not</a>
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown active">
+                            <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Newline <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li class="active">
-    <a href="nl_brace_else.html">nl_brace_else</a>
+<li >
+    <a href="../newline_options/nl_brace_else.html">nl_brace_else</a>
 </li>
                                     
 <li >
-    <a href="nl_before_block_comment.html">nl_before_block_comment</a>
+    <a href="../newline_options/nl_before_block_comment.html">nl_before_block_comment</a>
 </li>
                                     
 <li >
-    <a href="nl_else_brace.html">nl_else_brace</a>
+    <a href="../newline_options/nl_else_brace.html">nl_else_brace</a>
 </li>
                                     
 <li >
-    <a href="nl_if_brace.html">nl_if_brace</a>
+    <a href="../newline_options/nl_if_brace.html">nl_if_brace</a>
 </li>
                                     
 <li >
-    <a href="nl_max.html">nl_max</a>
+    <a href="../newline_options/nl_max.html">nl_max</a>
 </li>
                                     
 <li >
-    <a href="nl_max_blank_in_func.html">nl_max_blank_in_func</a>
+    <a href="../newline_options/nl_max_blank_in_func.html">nl_max_blank_in_func</a>
 </li>
                                 </ul>
                             </li>
@@ -140,12 +140,12 @@
                             </a>
                         </li>
                             <li >
-                                <a rel="next" href="../spacing_options/sp_not.html">
+                                <a rel="next" href="sp_angle_word.html">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li >
-                                <a rel="prev" href="nl_before_block_comment.html">
+                                <a rel="prev" href="sp_brace_else.html">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -157,7 +157,7 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#nl_brace_else">nl_brace_else</a></li>
+        <li class="main active"><a href="#sp_assign">sp_assign</a></li>
         <li class="main "><a href="#examples">Examples</a></li>
             <li><a href="#add">Add</a></li>
             <li><a href="#remove">Remove</a></li>
@@ -166,55 +166,51 @@
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="nl_brace_else">nl_brace_else</h1>
-<p>Add or remove newline between '}' and 'else'.</p>
-<p>Possible values are <em>ignore</em>, <em>add</em>, <em>remove</em> and <em>force</em>.</p>
+<h1 id="sp_assign">sp_assign</h1>
+<p>Add or remove space around assignment operator <code>=</code>, <code>+=</code>, etc.</p>
+<p>Possible values are <em>ignore</em>, <em>add</em>, <em>remove</em> and <em>force</em>, default is <em>ignore</em>.</p>
 <h1 id="examples">Examples</h1>
 <h2 id="add">Add</h2>
 <p>Before:</p>
-<pre><code>if (x&lt;y) {
-    std::cout &lt;&lt; &quot;Also x is less than &quot; &lt;&lt; y &lt;&lt; '\n';
-} else {
-    std::cout &lt;&lt; &quot;Also x is more (or equal) than &quot; &lt;&lt; y &lt;&lt; '\n';
-}
+<pre><code>vector&lt;int&gt;v ={7, 5, 16, 8};
+
+shared_ptr&lt;int&gt;isp=make_shared&lt;int&gt;();
+*isp = 5000;
+
+int x=4, y=5;
+int z= x+y;
 </code></pre>
 
 <p>After</p>
-<pre><code>if (x&lt;y) {
-    std::cout &lt;&lt; &quot;Also x is less than &quot; &lt;&lt; y &lt;&lt; '\n';
-}
-else {
-    std::cout &lt;&lt; &quot;Also x is more (or equal) than &quot; &lt;&lt; y &lt;&lt; '\n';
-}
+<pre><code>vector&lt;int&gt;v = {7, 5, 16, 8};
+
+shared_ptr&lt;int&gt;isp = make_shared&lt;int&gt;();
+*isp = 5000;
+
+int x = 4, y = 5;
+int z = x+y;
 </code></pre>
 
 <h2 id="remove">Remove</h2>
 <p>Before</p>
-<pre><code>if (x&lt;y)
-{
-    std::cout &lt;&lt; &quot;Also x is less than &quot; &lt;&lt; y &lt;&lt; '\n';
-}
-else
-{
-    std::cout &lt;&lt; &quot;Also x is more (or equal) than &quot; &lt;&lt; y &lt;&lt; '\n';
-}
+<pre><code>vector&lt;int&gt;v =  {7, 5, 16, 8};
+shared_ptr&lt;int&gt;isp  =make_shared&lt;int&gt;();
+*isp = 5000;
+int x=4, y = 5;
+int z= x+y;
 </code></pre>
 
 <p>After</p>
-<pre><code>if (x&lt;y)
-{
-    std::cout &lt;&lt; &quot;Also x is less than &quot; &lt;&lt; y &lt;&lt; '\n';
-}else
-{
-    std::cout &lt;&lt; &quot;Also x is more (or equal) than &quot; &lt;&lt; y &lt;&lt; '\n';
-}
+<pre><code>vector&lt;int&gt;v={7, 5, 16, 8};
+shared_ptr&lt;int&gt;isp=make_shared&lt;int&gt;();
+*isp=5000;
+int x=4, y=5;
+int z=x+y;
 </code></pre>
 
 <h1 id="see-also">See also</h1>
 <ul>
-<li><a href="nl_if_brace.html">nl_if_brace</a> - similar option but for <code>if</code></li>
-<li><a href="../spacing_options/sp_brace_else.html">sp_brace_else</a> - Add or remove space between <code>}</code> and <code>else</code> if on the same line</li>
-<li><a href="nl_else_brace.html">nl_else_brace</a></li>
+<li><a href="../spacing_options/sp_angle_paren.md">sp_angle_paren</a> - Add or remove space between <code>&gt;</code> and <code>(</code> as found in <code>new List&lt;byte&gt;(foo);</code>.</li>
 </ul></div>
         </div>
 

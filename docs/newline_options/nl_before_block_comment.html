@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>nl_brace_else - Uncrustify Config Examples</title>
+        <title>nl_before_block_comment - Uncrustify Config Examples</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -90,11 +90,11 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Newline <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li class="active">
+<li >
     <a href="nl_brace_else.html">nl_brace_else</a>
 </li>
                                     
-<li >
+<li class="active">
     <a href="nl_before_block_comment.html">nl_before_block_comment</a>
 </li>
                                     
@@ -140,12 +140,12 @@
                             </a>
                         </li>
                             <li >
-                                <a rel="next" href="../spacing_options/sp_not.html">
+                                <a rel="next" href="nl_brace_else.html">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li >
-                                <a rel="prev" href="nl_before_block_comment.html">
+                                <a rel="prev" href="nl_else_brace.html">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -157,64 +157,63 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#nl_brace_else">nl_brace_else</a></li>
+        <li class="main active"><a href="#nl_before_block_comment">nl_before_block_comment</a></li>
         <li class="main "><a href="#examples">Examples</a></li>
-            <li><a href="#add">Add</a></li>
-            <li><a href="#remove">Remove</a></li>
         <li class="main "><a href="#see-also">See also</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="nl_brace_else">nl_brace_else</h1>
-<p>Add or remove newline between '}' and 'else'.</p>
-<p>Possible values are <em>ignore</em>, <em>add</em>, <em>remove</em> and <em>force</em>.</p>
+<h1 id="nl_before_block_comment">nl_before_block_comment</h1>
+<p>The minimum number of newlines before a multi-line comment. Doesn't apply if after a brace open or another multi-line comment.</p>
+<p>Values is integer value. Default is 0 as "no new newlines added".</p>
+<p>Note:</p>
+<ul>
+<li>actual number of empty lines will be "<code>nl_before_block_comment-1</code>". Setting <code>nl_before_block_comment = 1</code> does not make sense because there is already one newline before multiline comment.</li>
+<li>this option conflicts with <a href="nl_max.html">nl_max</a></li>
+</ul>
 <h1 id="examples">Examples</h1>
-<h2 id="add">Add</h2>
-<p>Before:</p>
-<pre><code>if (x&lt;y) {
-    std::cout &lt;&lt; &quot;Also x is less than &quot; &lt;&lt; y &lt;&lt; '\n';
-} else {
-    std::cout &lt;&lt; &quot;Also x is more (or equal) than &quot; &lt;&lt; y &lt;&lt; '\n';
-}
+<p>If config is <code>nl_before_block_comment = 2</code> only one empty line will be added:</p>
+<pre><code>#include &lt;iostream&gt;
+/* Some comment
+ * (this is multiline comment)
+ */
+
+int main()
+{
+    int x = 10;
+    int y = 20;
+    /* Another variables
+     * (this is multiline comment)
+     */
+    int a = 20;
+    int b = 10;
+    int c = b;
 </code></pre>
 
-<p>After</p>
-<pre><code>if (x&lt;y) {
-    std::cout &lt;&lt; &quot;Also x is less than &quot; &lt;&lt; y &lt;&lt; '\n';
-}
-else {
-    std::cout &lt;&lt; &quot;Also x is more (or equal) than &quot; &lt;&lt; y &lt;&lt; '\n';
-}
-</code></pre>
+<p>transformed to</p>
+<pre><code>#include &lt;iostream&gt;
 
-<h2 id="remove">Remove</h2>
-<p>Before</p>
-<pre><code>if (x&lt;y)
-{
-    std::cout &lt;&lt; &quot;Also x is less than &quot; &lt;&lt; y &lt;&lt; '\n';
-}
-else
-{
-    std::cout &lt;&lt; &quot;Also x is more (or equal) than &quot; &lt;&lt; y &lt;&lt; '\n';
-}
-</code></pre>
+/* Some comment
+ * (this is multiline comment)
+ */
 
-<p>After</p>
-<pre><code>if (x&lt;y)
+int main()
 {
-    std::cout &lt;&lt; &quot;Also x is less than &quot; &lt;&lt; y &lt;&lt; '\n';
-}else
-{
-    std::cout &lt;&lt; &quot;Also x is more (or equal) than &quot; &lt;&lt; y &lt;&lt; '\n';
-}
+    int x = 10;
+    int y = 20;
+
+    /* Another variables
+     * (this is multiline comment)
+     */
+    int a = 20;
+    int b = 10;
+    int c = b;
 </code></pre>
 
 <h1 id="see-also">See also</h1>
 <ul>
-<li><a href="nl_if_brace.html">nl_if_brace</a> - similar option but for <code>if</code></li>
-<li><a href="../spacing_options/sp_brace_else.html">sp_brace_else</a> - Add or remove space between <code>}</code> and <code>else</code> if on the same line</li>
-<li><a href="nl_else_brace.html">nl_else_brace</a></li>
+<li><a href="nl_max.html">nl_max</a> - The maximum number of consecutive newlines</li>
 </ul></div>
         </div>
 
