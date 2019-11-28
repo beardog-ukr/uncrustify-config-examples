@@ -17,6 +17,7 @@ nav:
         - 'nl_before_block_comment': 'newline_options/nl_before_block_comment.md'
         - 'nl_else_brace': 'newline_options/nl_else_brace.md'
         - 'nl_if_brace': 'newline_options/nl_if_brace.md'
+        - 'nl_max': 'newline_options/nl_max.md'
     - Other options:
         - 'cmt_width': 'other_options/cmt_width.md'
         - 'code_width': 'other_options/code_width.md'
