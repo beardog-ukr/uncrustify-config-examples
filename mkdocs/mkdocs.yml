@@ -6,6 +6,7 @@ nav:
     - Home: index.md
     - Spacing:
         - 'sp_angle_word': 'spacing_options/sp_angle_word.md'
+        - 'sp_assign': 'spacing_options/sp_assign.md'
         - 'sp_brace_else': 'spacing_options/sp_brace_else.md'
         - 'sp_cpp_lambda_assign': 'spacing_options/sp_cpp_lambda_assign.md'
         - 'sp_cpp_lambda_paren': 'spacing_options/sp_cpp_lambda_paren.md'
@@ -13,6 +14,7 @@ nav:
         - 'sp_not': 'spacing_options/sp_not.md'
     - Newline:
         - 'nl_brace_else': 'newline_options/nl_brace_else.md'
+        - 'nl_before_block_comment': 'newline_options/nl_before_block_comment.md'
         - 'nl_else_brace': 'newline_options/nl_else_brace.md'
         - 'nl_if_brace': 'newline_options/nl_if_brace.md'
     - Other options:
