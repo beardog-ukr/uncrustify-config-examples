@@ -25,6 +25,7 @@ nav:
     - Other options:
         - 'cmt_width': 'other_options/cmt_width.md'
         - 'code_width': 'other_options/code_width.md'
+        - 'mod_full_brace_if': 'other_options/mod_full_brace_if.md'
 
     - About: about.md
 
