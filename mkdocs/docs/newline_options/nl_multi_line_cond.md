@@ -2,7 +2,7 @@
 
 Add a newline between `)` and `{` if the `)` is on a different line than the `if`/`for`/etc.
 
-Overrides [nl_for_brace](nl_for_brace.md), [nl_if_brace](nl_if_brace.md), [nl_switch_brace](nl_switch_brace.md), [nl_while_switch](nl_while_switch.md) and [nl_catch_brace](nl_catch_brace.md).
+Overrides [nl_for_brace](nl_for_brace.md), [nl_if_brace](nl_if_brace.md), [nl_switch_brace](nl_switch_brace.md) and [nl_catch_brace](nl_catch_brace.md).
 
 Possible values are _false_/_true_. Default is _false_ (don't override).
 
@@ -45,5 +45,4 @@ if ((x<5 )&&
 * [nl_for_brace](nl_for_brace.md)
 * [nl_if_brace](nl_if_brace.md)
 * [nl_switch_brace](nl_switch_brace.md)
-* [nl_while_switch](nl_while_switch.md)
 * [nl_catch_brace](nl_catch_brace.md)

@@ -74,7 +74,6 @@ if (x<y) {
 
 * [nl_else_brace](nl_else_brace.md) - similar option but for _else_
 * [nl_if_leave_one_liners](nl_if_leave_one_liners.md) - if one-line _if_ statements should be changed
-* [nl_multi_line_cond](nl_multi_line_cond.md) - Overrides _nl_for_brace_, _nl_if_brace_, _nl_switch_brace_, _nl_while_switch_ and
- _nl_catch_brace_
+* [nl_multi_line_cond](nl_multi_line_cond.md) - Overrides _nl_for_brace_, _nl_if_brace_, _nl_switch_brace_ and _nl_catch_brace_
 * [mod_full_brace_if](../other_options/mod_full_brace_if.md) - Add or remove braces on a single-line 'if' statement. Braces will not be
  removed if the braced statement contains an 'else'.
