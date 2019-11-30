@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>sp_assign - Uncrustify Config Examples</title>
+        <title>mod_full_brace_if - Uncrustify Config Examples</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -49,48 +49,48 @@
                             <li >
                                 <a href="../index.html">Home</a>
                             </li>
-                            <li class="dropdown active">
+                            <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Spacing <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li >
-    <a href="sp_angle_paren.html">sp_angle_paren</a>
+    <a href="../spacing_options/sp_angle_paren.html">sp_angle_paren</a>
 </li>
                                     
 <li >
-    <a href="sp_angle_paren_empty.html">sp_angle_paren_empty</a>
+    <a href="../spacing_options/sp_angle_paren_empty.html">sp_angle_paren_empty</a>
 </li>
                                     
 <li >
-    <a href="sp_angle_word.html">sp_angle_word</a>
-</li>
-                                    
-<li class="active">
-    <a href="sp_assign.html">sp_assign</a>
+    <a href="../spacing_options/sp_angle_word.html">sp_angle_word</a>
 </li>
                                     
 <li >
-    <a href="sp_brace_else.html">sp_brace_else</a>
+    <a href="../spacing_options/sp_assign.html">sp_assign</a>
 </li>
                                     
 <li >
-    <a href="sp_cpp_lambda_assign.html">sp_cpp_lambda_assign</a>
+    <a href="../spacing_options/sp_brace_else.html">sp_brace_else</a>
 </li>
                                     
 <li >
-    <a href="sp_cpp_lambda_paren.html">sp_cpp_lambda_paren</a>
+    <a href="../spacing_options/sp_cpp_lambda_assign.html">sp_cpp_lambda_assign</a>
 </li>
                                     
 <li >
-    <a href="sp_else_brace.html">sp_else_brace</a>
+    <a href="../spacing_options/sp_cpp_lambda_paren.html">sp_cpp_lambda_paren</a>
 </li>
                                     
 <li >
-    <a href="sp_inside_fparens.html">sp_inside_fparens</a>
+    <a href="../spacing_options/sp_else_brace.html">sp_else_brace</a>
 </li>
                                     
 <li >
-    <a href="sp_not.html">sp_not</a>
+    <a href="../spacing_options/sp_inside_fparens.html">sp_inside_fparens</a>
+</li>
+                                    
+<li >
+    <a href="../spacing_options/sp_not.html">sp_not</a>
 </li>
                                 </ul>
                             </li>
@@ -147,24 +147,24 @@
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other options <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li >
-    <a href="../other_options/cmt_width.html">cmt_width</a>
+    <a href="cmt_width.html">cmt_width</a>
 </li>
                                     
 <li >
-    <a href="../other_options/code_width.html">code_width</a>
+    <a href="code_width.html">code_width</a>
+</li>
+                                    
+<li class="active">
+    <a href="mod_full_brace_if.html">mod_full_brace_if</a>
 </li>
                                     
 <li >
-    <a href="../other_options/mod_full_brace_if.html">mod_full_brace_if</a>
-</li>
-                                    
-<li >
-    <a href="../other_options/mod_full_brace_for.html">mod_full_brace_for</a>
+    <a href="mod_full_brace_for.html">mod_full_brace_for</a>
 </li>
                                 </ul>
                             </li>
@@ -180,12 +180,12 @@
                             </a>
                         </li>
                             <li >
-                                <a rel="next" href="sp_angle_word.html">
+                                <a rel="next" href="code_width.html">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li >
-                                <a rel="prev" href="sp_brace_else.html">
+                                <a rel="prev" href="mod_full_brace_for.html">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -197,60 +197,59 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#sp_assign">sp_assign</a></li>
+        <li class="main active"><a href="#mod_full_brace_if">mod_full_brace_if</a></li>
         <li class="main "><a href="#examples">Examples</a></li>
-            <li><a href="#add">Add</a></li>
-            <li><a href="#remove">Remove</a></li>
+            <li><a href="#add">add</a></li>
+            <li><a href="#remove">remove</a></li>
         <li class="main "><a href="#see-also">See also</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="sp_assign">sp_assign</h1>
-<p>Add or remove space around assignment operator <code>=</code>, <code>+=</code>, etc.</p>
+<h1 id="mod_full_brace_if">mod_full_brace_if</h1>
+<p>Add or remove braces on a single-line <code>if</code> statement. Braces will not be removed if the braced statement contains an <code>else</code>.</p>
 <p>Possible values are <em>ignore</em>, <em>add</em>, <em>remove</em> and <em>force</em>, default is <em>ignore</em>.</p>
 <h1 id="examples">Examples</h1>
-<h2 id="add">Add</h2>
-<p>Before:</p>
-<pre><code>vector&lt;int&gt;v ={7, 5, 16, 8};
-
-shared_ptr&lt;int&gt;isp=make_shared&lt;int&gt;();
-*isp = 5000;
-
-int x=4, y=5;
-int z= x+y;
+<h2 id="add">add</h2>
+<p>Following</p>
+<pre><code>if (x&lt;15) y=3;
 </code></pre>
 
-<p>After</p>
-<pre><code>vector&lt;int&gt;v = {7, 5, 16, 8};
-
-shared_ptr&lt;int&gt;isp = make_shared&lt;int&gt;();
-*isp = 5000;
-
-int x = 4, y = 5;
-int z = x+y;
+<p>will be translated to</p>
+<pre><code>if (x&lt;15) {y=3;}
 </code></pre>
 
-<h2 id="remove">Remove</h2>
-<p>Before</p>
-<pre><code>vector&lt;int&gt;v =  {7, 5, 16, 8};
-shared_ptr&lt;int&gt;isp  =make_shared&lt;int&gt;();
-*isp = 5000;
-int x=4, y = 5;
-int z= x+y;
+<p>Note, no newlines will be added by default. Probably it will be better to use with <a href="../newline_options/nl_if_brace.html">nl_if_brace</a> option, like</p>
+<pre><code>nl_if_brace = add
+mod_full_brace_if = add
 </code></pre>
 
-<p>After</p>
-<pre><code>vector&lt;int&gt;v={7, 5, 16, 8};
-shared_ptr&lt;int&gt;isp=make_shared&lt;int&gt;();
-*isp=5000;
-int x=4, y=5;
-int z=x+y;
+<p>Transforms</p>
+<pre><code>if (x&lt;15) y=3;
+</code></pre>
+
+<p>into</p>
+<pre><code>if (x&lt;15)
+{
+  y=3;
+}
+</code></pre>
+
+<h2 id="remove">remove</h2>
+<p>With <code>remove</code> value following</p>
+<pre><code>if (y&lt;5) {
+  std::cout &lt;&lt; &quot;y is less than 5&quot; &lt;&lt; '\n';
+}
+</code></pre>
+
+<p>will be translated into</p>
+<pre><code>if (y&lt;5)
+  std::cout &lt;&lt; &quot;y is less than 5&quot; &lt;&lt; '\n';
 </code></pre>
 
 <h1 id="see-also">See also</h1>
 <ul>
-<li><a href="sp_angle_paren.html">sp_angle_paren</a> - Add or remove space between <code>&gt;</code> and <code>(</code> as found in <code>new List&lt;byte&gt;(foo);</code>.</li>
+<li><a href="../newline_options/nl_if_brace.html">nl_if_brace</a> - Add or remove newline between 'if' and '{'.</li>
 </ul></div>
         </div>
 
