@@ -6,6 +6,7 @@ nav:
     - Home: index.md
     - Spacing:
         - 'sp_angle_paren': 'spacing_options/sp_angle_paren.md'
+        - 'sp_angle_paren_empty': 'spacing_options/sp_angle_paren_empty.md'
         - 'sp_angle_word': 'spacing_options/sp_angle_word.md'
         - 'sp_assign': 'spacing_options/sp_assign.md'
         - 'sp_brace_else': 'spacing_options/sp_brace_else.md'
