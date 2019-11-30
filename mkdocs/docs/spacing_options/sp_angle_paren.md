@@ -14,25 +14,25 @@ In both examples only first line gets modified. Second is not changed because of
 Before:
 ```
 std::list<int> *lp = new std::list<int>(10);
-std::list<int> *lpe = new std::list<int>
+std::list<int> *lpe = new std::list<int>()
 ```
 After
 ```
 std::list<int> *lp = new std::list<int> (10);
-std::list<int> *lpe = new std::list<int>
+std::list<int> *lpe = new std::list<int>()
 ```
 
 ## Remove
 Before
 ```
 std::list<int> *lp = new std::list<int> (10);
-std::list<int> *lpe = new std::list<int>
+std::list<int> *lpe = new std::list<int> ()
 ```
 
 After
 ```
 std::list<int> *lp = new std::list<int>(10);
-std::list<int> *lpe = new std::list<int>
+std::list<int> *lpe = new std::list<int> ()
 ```
 
 # See also
