@@ -13,6 +13,7 @@ nav:
         - 'sp_cpp_lambda_assign': 'spacing_options/sp_cpp_lambda_assign.md'
         - 'sp_cpp_lambda_paren': 'spacing_options/sp_cpp_lambda_paren.md'
         - 'sp_else_brace': 'spacing_options/sp_else_brace.md'
+        - 'sp_inside_angle': 'spacing_options/sp_inside_angle.md'
         - 'sp_inside_fparens': 'spacing_options/sp_inside_fparens.md'
         - 'sp_not': 'spacing_options/sp_not.md'
     - Newline:
