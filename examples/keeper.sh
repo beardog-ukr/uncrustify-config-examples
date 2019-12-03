@@ -270,9 +270,9 @@ _show_diff() {
 
   local _unc_ffn="${_EXAMPLES_FOLDER}/${_EXAMPLE_NAME}/${_EXAMPLE_SUBNAME}.unc.cpp"
   if [ ! -f "${_unc_ffn}" ]; then
-    _debug "Failed to find default condig file '${_unc_ffn}'\\n"
+    _debug "Failed to find uncrustified file '${_unc_ffn}'\\n"
     _debug "You need to generate it first\\n"
-    die "Show diff failed; default config file not found"
+    die "Show diff failed; uncrustified file not found"
   fi
 
   printf "Calling \"${_DIFF_TOOL}\"... "
