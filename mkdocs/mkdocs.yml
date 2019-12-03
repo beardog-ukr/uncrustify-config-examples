@@ -5,6 +5,7 @@ use_directory_urls: false
 nav:
     - "<": 'index.md'
     - Indent:
+        - 'indent_columns': 'indent_options/indent_columns.md'
         - 'indent_with_tabs': 'indent_options/indent_with_tabs.md'
     - Spacing:
         - 'sp_angle_paren': 'spacing_options/sp_angle_paren.md'
