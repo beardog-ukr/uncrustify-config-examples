@@ -17,6 +17,7 @@ nav:
         - 'sp_inside_angle': 'spacing_options/sp_inside_angle.md'
         - 'sp_inside_fparens': 'spacing_options/sp_inside_fparens.md'
         - 'sp_not': 'spacing_options/sp_not.md'
+        - 'sp_permit_cpp11_shift': 'spacing_options/sp_permit_cpp11_shift.md'
     - Newline:
         - 'nl_brace_else': 'newline_options/nl_brace_else.md'
         - 'nl_before_block_comment': 'newline_options/nl_before_block_comment.md'
