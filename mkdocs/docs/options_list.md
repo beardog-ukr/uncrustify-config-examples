@@ -7,6 +7,7 @@
 * [sp_angle_word](spacing_options/sp_angle_word.md)
 * [sp_assign](spacing_options/sp_assign.md)
 * [sp_brace_else](spacing_options/sp_brace_else.md)
+* [sp_catch_paren](spacing_options/sp_catch_paren.md): Add or remove space between `catch` and `(` in `catch (something) { }`. If set to ignore, [sp_before_sparen](sp_before_sparen.md) is used.
 * [sp_cpp_lambda_assign](spacing_options/sp_cpp_lambda_assign.md)
 * [sp_cpp_lambda_paren](spacing_options/sp_cpp_lambda_paren.md)
 * [sp_else_brace](spacing_options/sp_else_brace.md)
