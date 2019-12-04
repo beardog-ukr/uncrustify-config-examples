@@ -8,3 +8,5 @@ nav:
     - About: about.md
 
 theme: spacelab
+
+google_analytics: ['UA-153878605-1', 'beardog-ukr.github.io/uncrustify-config-examples/']
