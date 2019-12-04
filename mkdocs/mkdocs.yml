@@ -9,4 +9,6 @@ nav:
 
 theme: spacelab
 
-google_analytics: ['UA-153878605-1', 'beardog-ukr.github.io/uncrustify-config-examples/']
+google_analytics:
+  - 'UA-153878605-1'
+  - 'auto'
