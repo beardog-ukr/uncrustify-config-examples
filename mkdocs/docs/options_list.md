@@ -35,13 +35,14 @@
 * [nl_catch_brace](newline_options/nl_catch_brace.md)
 * [nl_else_brace](newline_options/nl_else_brace.md)
 * [nl_elseif_brace](newline_options/nl_elseif_brace.md)
-* [nl_for_brace](newline_options/nl_for_brace.md)
+* [nl_fdef_brace](newline_options/nl_fdef_brace.md): Add or remove newline between function signature and `{`.
+* [nl_for_brace](newline_options/nl_for_brace.md): Add or remove newline between 'for' and '{'.
 * [nl_if_brace](newline_options/nl_if_brace.md)
 * [nl_if_leave_one_liners](newline_options/nl_if_leave_one_liners.md)
 * [nl_max](newline_options/nl_max.md)
 * [nl_max_blank_in_func](newline_options/nl_max_blank_in_func.md)
 * [nl_multi_line_cond](newline_options/nl_multi_line_cond.md)
-* [nl_switch_brace](newline_options/nl_switch_brace.md)
+* [nl_switch_brace](newline_options/nl_switch_brace.md): Add or remove newline between 'switch' and '{'.
 
 #Other
 * [cmt_width](other_options/cmt_width.md)
