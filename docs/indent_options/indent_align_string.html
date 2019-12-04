@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>sp_brace_else - Uncrustify Config Examples</title>
+        <title>indent_align_string - Uncrustify Config Examples</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -71,82 +71,99 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#sp_brace_else">sp_brace_else</a></li>
+        <li class="main active"><a href="#indent_align_string">indent_align_string</a></li>
         <li class="main "><a href="#examples">Examples</a></li>
-            <li><a href="#add">Add</a></li>
-            <li><a href="#force">Force</a></li>
-            <li><a href="#remove">Remove</a></li>
+            <li><a href="#true">true</a></li>
+            <li><a href="#false">false</a></li>
         <li class="main "><a href="#see-also">See also</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="sp_brace_else">sp_brace_else</h1>
-<p>Add or remove space between <code>}</code> and <code>else</code> if on the same line</p>
-<p>Possible values are <em>ignore</em>, <em>add</em>, <em>remove</em> and <em>force</em>.</p>
+<h1 id="indent_align_string">indent_align_string</h1>
+<p>Whether to indent strings broken by '\' so that they line up.</p>
+<p>Possible values are <em>true</em> or <em>false</em>, default <em>false</em>.</p>
+<p>It seems that description of this option is not correct, example below works in some other way.</p>
 <h1 id="examples">Examples</h1>
-<h2 id="add">Add</h2>
+<h2 id="true">true</h2>
+<p>Config:</p>
+<pre><code>indent_align_string = true
+</code></pre>
+
 <p>Before:</p>
-<pre><code>if (x&lt;y) {
-  std::cout &lt;&lt; &quot;Also x is less than &quot; &lt;&lt; y &lt;&lt; '\n';
-}else{
-  std::cout &lt;&lt; &quot;Also x is more (or equal) than &quot; &lt;&lt; y &lt;&lt; '\n';
+<pre><code>int main()
+{
+    if (x&lt;50) {
+        s = std::string(&quot;Lorem ipsum dolor sit amet,&quot;
+&quot;consectetur adipiscing elit.&quot;
+&quot;Cras fermentum id diam sit amet consequat.&quot;);
+
+        s = ssff(20, &quot;Lorem ipsum dolor sit amet,&quot;
+&quot;consectetur adipiscing elit.&quot;
+&quot;Cras fermentum id diam sit amet consequat.&quot;);
+
+    }
 }
 </code></pre>
 
-<p>After</p>
-<pre><code>if (x&lt;y) {
-  std::cout &lt;&lt; &quot;Also x is less than &quot; &lt;&lt; y &lt;&lt; '\n';
-} else{
-  std::cout &lt;&lt; &quot;Also x is more (or equal) than &quot; &lt;&lt; y &lt;&lt; '\n';
+<p>After:</p>
+<pre><code>int main()
+{
+    if (x&lt;50) {
+        s = std::string(&quot;Lorem ipsum dolor sit amet,&quot;
+                        &quot;consectetur adipiscing elit.&quot;
+                        &quot;Cras fermentum id diam sit amet consequat.&quot;);
+
+        s = ssff(20, &quot;Lorem ipsum dolor sit amet,&quot;
+                     &quot;consectetur adipiscing elit.&quot;
+                     &quot;Cras fermentum id diam sit amet consequat.&quot;);
+
+    }
 }
 </code></pre>
 
-<p>Here space is added to the left of <code>else</code>; the <a href="sp_else_brace.html">sp_else_brace</a> may add space to the right</p>
-<h2 id="force">Force</h2>
+<h2 id="false">false</h2>
+<p>Config:</p>
+<pre><code>indent_align_string = false
+</code></pre>
+
 <p>Before:</p>
-<pre><code>if (x&lt;y)
+<pre><code>int main()
 {
-  std::cout &lt;&lt; &quot;Also x is less than &quot; &lt;&lt; y &lt;&lt; '\n';
-}     else {
-  std::cout &lt;&lt; &quot;Also x is more (or equal) than &quot; &lt;&lt; y &lt;&lt; '\n';
+    if (x&lt;50) {
+        s = std::string(&quot;Lorem ipsum dolor sit amet,&quot;
+&quot;consectetur adipiscing elit.&quot;
+&quot;Cras fermentum id diam sit amet consequat.&quot;);
+
+        s = ssff(20, &quot;Lorem ipsum dolor sit amet,&quot;
+&quot;consectetur adipiscing elit.&quot;
+&quot;Cras fermentum id diam sit amet consequat.&quot;);
+
+    }
 }
 </code></pre>
 
-<p>After</p>
-<pre><code>if (x&lt;y)
+<p>After:</p>
+<pre><code>int main()
 {
-  std::cout &lt;&lt; &quot;Also x is less than &quot; &lt;&lt; y &lt;&lt; '\n';
-} else {
-  std::cout &lt;&lt; &quot;Also x is more (or equal) than &quot; &lt;&lt; y &lt;&lt; '\n';
+    if (x&lt;50) {
+        s = std::string(&quot;Lorem ipsum dolor sit amet,&quot;
+                        &quot;consectetur adipiscing elit.&quot;
+                        &quot;Cras fermentum id diam sit amet consequat.&quot;);
+        s = ssff(20, &quot;Lorem ipsum dolor sit amet,&quot;
+                 &quot;consectetur adipiscing elit.&quot;
+                 &quot;Cras fermentum id diam sit amet consequat.&quot;);
+    }
 }
 </code></pre>
 
-<h2 id="remove">Remove</h2>
-<p>Before</p>
-<pre><code>if (x&lt;y)
-{
-  std::cout &lt;&lt; &quot;Also x is less than &quot; &lt;&lt; y &lt;&lt; '\n';
-}   else
-{
-  std::cout &lt;&lt; &quot;Also x is more (or equal) than &quot; &lt;&lt; y &lt;&lt; '\n';
-}
-</code></pre>
-
-<p>After</p>
-<pre><code>if (x&lt;y)
-{
-  std::cout &lt;&lt; &quot;Also x is less than &quot; &lt;&lt; y &lt;&lt; '\n';
-}else
-{
-  std::cout &lt;&lt; &quot;Also x is more (or equal) than &quot; &lt;&lt; y &lt;&lt; '\n';
-}
-</code></pre>
-
+<p>Note the only version from "true" version is that in second assignment lines are aligned at level of brace and not the level of function parameter.</p>
 <h1 id="see-also">See also</h1>
 <ul>
-<li><a href="../newline_options/nl_brace_else.html">nl_brace_else</a> - Add or remove newline between <code>}</code> and <code>else</code>.</li>
-<li><a href="../newline_options/nl_elseif_brace.html">nl_elseif_brace</a> - Add or remove newline between <code>else if</code> and <code>{</code>.</li>
+<li><a href="indent_xml_string.html">indent_xml_string</a> - The number of spaces to indent multi-line XML strings. Requires <code>indent_align_string=true</code>.</li>
+<li><a href="https://github.com/uncrustify/uncrustify/issues/248">Bug #248</a> - indent_align_string and streams #248 (closed)</li>
+<li><a href="https://github.com/uncrustify/uncrustify/issues/749">Issue #749</a> - indent_with_tabs: allow alignment with either spaces or tabs</li>
+<li><a href="https://github.com/uncrustify/uncrustify/blob/master/tests/input/c/align-string.c">Test code</a> and <a href="https://github.com/uncrustify/uncrustify/blob/master/tests/expected/c/02201-align-string.c">expected result</a></li>
 </ul></div>
         </div>
 

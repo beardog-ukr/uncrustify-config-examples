@@ -7,11 +7,11 @@
         
         
         
-        <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>sp_brace_else - Uncrustify Config Examples</title>
-        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="../css/font-awesome.min.css" rel="stylesheet">
-        <link href="../css/base.css" rel="stylesheet">
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>Config for "Google C++ Style Guide" - Uncrustify Config Examples</title>
+        <link href="css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/color-brewer.min.css">
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -19,8 +19,8 @@
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-        <script src="../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="js/jquery-1.10.2.min.js" defer></script>
+        <script src="js/bootstrap-3.0.3.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
@@ -39,7 +39,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="../index.html">Uncrustify Config Examples</a>
+                    <a class="navbar-brand" href="index.html">Uncrustify Config Examples</a>
                 </div>
 
                 <!-- Expanded navigation -->
@@ -47,13 +47,13 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li >
-                                <a href="../index.html"><</a>
+                                <a href="index.html"><</a>
                             </li>
                             <li >
-                                <a href="../options_list.html">Options</a>
+                                <a href="options_list.html">Options</a>
                             </li>
                             <li >
-                                <a href="../about.html">About</a>
+                                <a href="about.html">About</a>
                             </li>
                         </ul>
 
@@ -71,83 +71,34 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#sp_brace_else">sp_brace_else</a></li>
-        <li class="main "><a href="#examples">Examples</a></li>
-            <li><a href="#add">Add</a></li>
-            <li><a href="#force">Force</a></li>
-            <li><a href="#remove">Remove</a></li>
-        <li class="main "><a href="#see-also">See also</a></li>
+        <li class="main active"><a href="#config-for-google-c-style-guide">Config for "Google C++ Style Guide"</a></li>
+        <li class="main "><a href="#formatting">Formatting</a></li>
+            <li><a href="#line-length">Line length</a></li>
+            <li><a href="#indent">Indent</a></li>
+        <li class="main "><a href="#full-config">Full config</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="sp_brace_else">sp_brace_else</h1>
-<p>Add or remove space between <code>}</code> and <code>else</code> if on the same line</p>
-<p>Possible values are <em>ignore</em>, <em>add</em>, <em>remove</em> and <em>force</em>.</p>
-<h1 id="examples">Examples</h1>
-<h2 id="add">Add</h2>
-<p>Before:</p>
-<pre><code>if (x&lt;y) {
-  std::cout &lt;&lt; &quot;Also x is less than &quot; &lt;&lt; y &lt;&lt; '\n';
-}else{
-  std::cout &lt;&lt; &quot;Also x is more (or equal) than &quot; &lt;&lt; y &lt;&lt; '\n';
-}
+<h1 id="config-for-google-c-style-guide">Config for "Google C++ Style Guide"</h1>
+<p>The "<a href="https://google.github.io/styleguide/cppguide.html#Formatting">Google C++ Style Guide</a>" is detailed.</p>
+<h1 id="formatting">Formatting</h1>
+<h2 id="line-length">Line length</h2>
+<p>Google recommends 80 character limit for line length. Uncrustify has two options: <a href="other_options/code_width.html">code_width</a> for code and <a href="other_options/cmt_width.html">cmt_width</a> for comments.</p>
+<pre><code>code_width = 80
+cmt_width = 80
 </code></pre>
 
-<p>After</p>
-<pre><code>if (x&lt;y) {
-  std::cout &lt;&lt; &quot;Also x is less than &quot; &lt;&lt; y &lt;&lt; '\n';
-} else{
-  std::cout &lt;&lt; &quot;Also x is more (or equal) than &quot; &lt;&lt; y &lt;&lt; '\n';
-}
+<p>Also Google allows some exceptions from this rule.</p>
+<h2 id="indent">Indent</h2>
+<p>The guide specifies <em>"Use only spaces, and indent 2 spaces at a time."</em>
+Config for this rule is</p>
+<pre><code>indent_with_tabs = 1
+indent_columns = 2
 </code></pre>
 
-<p>Here space is added to the left of <code>else</code>; the <a href="sp_else_brace.html">sp_else_brace</a> may add space to the right</p>
-<h2 id="force">Force</h2>
-<p>Before:</p>
-<pre><code>if (x&lt;y)
-{
-  std::cout &lt;&lt; &quot;Also x is less than &quot; &lt;&lt; y &lt;&lt; '\n';
-}     else {
-  std::cout &lt;&lt; &quot;Also x is more (or equal) than &quot; &lt;&lt; y &lt;&lt; '\n';
-}
-</code></pre>
-
-<p>After</p>
-<pre><code>if (x&lt;y)
-{
-  std::cout &lt;&lt; &quot;Also x is less than &quot; &lt;&lt; y &lt;&lt; '\n';
-} else {
-  std::cout &lt;&lt; &quot;Also x is more (or equal) than &quot; &lt;&lt; y &lt;&lt; '\n';
-}
-</code></pre>
-
-<h2 id="remove">Remove</h2>
-<p>Before</p>
-<pre><code>if (x&lt;y)
-{
-  std::cout &lt;&lt; &quot;Also x is less than &quot; &lt;&lt; y &lt;&lt; '\n';
-}   else
-{
-  std::cout &lt;&lt; &quot;Also x is more (or equal) than &quot; &lt;&lt; y &lt;&lt; '\n';
-}
-</code></pre>
-
-<p>After</p>
-<pre><code>if (x&lt;y)
-{
-  std::cout &lt;&lt; &quot;Also x is less than &quot; &lt;&lt; y &lt;&lt; '\n';
-}else
-{
-  std::cout &lt;&lt; &quot;Also x is more (or equal) than &quot; &lt;&lt; y &lt;&lt; '\n';
-}
-</code></pre>
-
-<h1 id="see-also">See also</h1>
-<ul>
-<li><a href="../newline_options/nl_brace_else.html">nl_brace_else</a> - Add or remove newline between <code>}</code> and <code>else</code>.</li>
-<li><a href="../newline_options/nl_elseif_brace.html">nl_elseif_brace</a> - Add or remove newline between <code>else if</code> and <code>{</code>.</li>
-</ul></div>
+<h1 id="full-config">Full config</h1>
+<p>TBD</p></div>
         </div>
 
         <footer class="col-md-12">
@@ -155,11 +106,11 @@
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>
-            var base_url = "..",
+            var base_url = ".",
                 shortcuts = {"next": 78, "help": 191, "search": 83, "previous": 80};
         </script>
-        <script src="../js/base.js" defer></script>
-        <script src="../search/main.js" defer></script>
+        <script src="js/base.js" defer></script>
+        <script src="search/main.js" defer></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
     <div class="modal-dialog">
