@@ -30,6 +30,7 @@
 * [indent_with_tabs](indent_options/indent_with_tabs.md): How to use tabs when indenting code.
 
 #Newline
+* [nl_after_func_body](newline_options/nl_after_func_body.md): The number of newlines after '}' of a multi-line function body.
 * [nl_brace_else](newline_options/nl_brace_else.md)
 * [nl_before_block_comment](newline_options/nl_before_block_comment.md)
 * [nl_catch_brace](newline_options/nl_catch_brace.md)
