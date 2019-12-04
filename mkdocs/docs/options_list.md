@@ -10,7 +10,7 @@
 * [sp_brace_catch](spacing_options/sp_brace_catch.md): Add or remove space between '}' and 'catch' if on the same line.
 * [sp_brace_else](spacing_options/sp_brace_else.md): Add or remove space between `}` and `else` if on the same line
 * [sp_catch_brace](spacing_options/sp_catch_brace.md): Add or remove space before the `{` of a `catch` statement, if the `{` and  `catch` are on the same line, as in `catch (decl) <here> {`.
-* [sp_catch_paren](spacing_options/sp_catch_paren.md): Add or remove space between `catch` and `(` in `catch (something) { }`. If set to ignore, [sp_before_sparen](sp_before_sparen.md) is used.
+* [sp_catch_paren](spacing_options/sp_catch_paren.md): Add or remove space between `catch` and `(` in `catch (something) { }`. If set to ignore, [sp_before_sparen](spacing_options/sp_before_sparen.md) is used.
 * [sp_cpp_lambda_assign](spacing_options/sp_cpp_lambda_assign.md)
 * [sp_cpp_lambda_paren](spacing_options/sp_cpp_lambda_paren.md)
 * [sp_else_brace](spacing_options/sp_else_brace.md)
@@ -31,6 +31,7 @@
 
 #Newline
 * [nl_after_func_body](newline_options/nl_after_func_body.md): The number of newlines after '}' of a multi-line function body.
+* [nl_after_func_body_one_liner](newline_options/nl_after_func_body_one_liner.md) - The number of newlines after '}' of a single line function body.
 * [nl_brace_else](newline_options/nl_brace_else.md)
 * [nl_before_block_comment](newline_options/nl_before_block_comment.md)
 * [nl_catch_brace](newline_options/nl_catch_brace.md)
