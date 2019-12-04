@@ -7,7 +7,8 @@
 * [sp_angle_word](spacing_options/sp_angle_word.md)
 * [sp_assign](spacing_options/sp_assign.md)
 * [sp_before_sparen](spacing_options/sp_before_sparen.md): Add or remove space before `(` of control statements (`if`, `for`, `switch`, `while` etc.).
-* [sp_brace_else](spacing_options/sp_brace_else.md)
+* [sp_brace_else](spacing_options/sp_brace_else.md): Add or remove space between `}` and `else` if on the same line
+* [sp_catch_brace](spacing_options/sp_catch_brace.md): Add or remove space before the `{` of a `catch` statement, if the `{` and  `catch` are on the same line, as in `catch (decl) <here> {`.
 * [sp_catch_paren](spacing_options/sp_catch_paren.md): Add or remove space between `catch` and `(` in `catch (something) { }`. If set to ignore, [sp_before_sparen](sp_before_sparen.md) is used.
 * [sp_cpp_lambda_assign](spacing_options/sp_cpp_lambda_assign.md)
 * [sp_cpp_lambda_paren](spacing_options/sp_cpp_lambda_paren.md)
