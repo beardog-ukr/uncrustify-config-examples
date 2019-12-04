@@ -1,4 +1,4 @@
-# nl_for_brace
+# nl_switch_brace
 
 Add or remove newline between 'switch' and '{'.
 
