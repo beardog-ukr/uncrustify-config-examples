@@ -14,6 +14,7 @@
 * [sp_inside_fparens](spacing_options/sp_inside_fparens.md)
 * [sp_not](spacing_options/sp_not.md)
 * [sp_permit_cpp11_shift](spacing_options/sp_permit_cpp11_shift.md)
+* [sp_try_brace](spacing_options/sp_try_brace.md): Add or remove space between `try` and `{` if on the same line.
 
 #Indent
 * [indent_align_string](indent_options/indent_align_string.md)
