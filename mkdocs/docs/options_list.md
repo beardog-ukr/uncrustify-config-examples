@@ -25,6 +25,7 @@
 * [indent_xml_string](indent_options/indent_xml_string.md): The number of spaces to indent multi-line XML strings.
 * [indent_columns](indent_options/indent_columns.md): The number of columns to indent per level.
 * [indent_continue](indent_options/indent_continue.md): The continuation indent. If non-zero, this overrides the indent of '(', '[' and '=' continuation indents.
+* [indent_namespace](indent_options/indent_namespace.md): Whether to indent the body of a 'namespace'.
 * [indent_with_tabs](indent_options/indent_with_tabs.md): How to use tabs when indenting code.
 
 #Newline

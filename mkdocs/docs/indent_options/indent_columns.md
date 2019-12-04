@@ -49,3 +49,4 @@ Code on html page may look the same, but it replaced each tab with two spaces (a
 * [indent_with_tabs](indent_with_tabs.md) - How to use tabs when indenting code.
 * [input_tab_size](input_tab_size.md) - The original size of tabs in the input.
 * [output_tab_size](output_tab_size.md) - The size of tabs in the output (only used if [align_with_tabs](align_with_tabs.md)=true).
+* [indent_namespace_level](indent_namespace_level.md) - The number of spaces to indent a namespace block.
