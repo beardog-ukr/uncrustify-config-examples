@@ -32,6 +32,7 @@
 #Newline
 * [nl_after_func_body](newline_options/nl_after_func_body.md): The number of newlines after '}' of a multi-line function body.
 * [nl_after_func_body_one_liner](newline_options/nl_after_func_body_one_liner.md): The number of newlines after '}' of a single line function body.
+* [nl_after_if](newline_options/nl_after_if.md): Add or remove blank line after 'if' statement.
 * [nl_brace_else](newline_options/nl_brace_else.md)
 * [nl_before_block_comment](newline_options/nl_before_block_comment.md)
 * [nl_before_if](newline_options/nl_before_if.md): Add or remove blank line before 'if'.
