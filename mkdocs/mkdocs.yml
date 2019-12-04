@@ -6,6 +6,7 @@ nav:
     - "<": 'index.md'
     - Indent:
         - 'indent_align_string': 'indent_options/indent_align_string.md'
+        - 'indent_xml_string': 'indent_options/indent_xml_string.md'
         - 'indent_columns': 'indent_options/indent_columns.md'
         - 'indent_with_tabs': 'indent_options/indent_with_tabs.md'
     - Spacing:
