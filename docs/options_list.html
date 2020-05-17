@@ -111,7 +111,7 @@
 <li><a href="spacing_options/sp_brace_catch.html">sp_brace_catch</a>: Add or remove space between '}' and 'catch' if on the same line.</li>
 <li><a href="spacing_options/sp_brace_else.html">sp_brace_else</a>: Add or remove space between <code>}</code> and <code>else</code> if on the same line</li>
 <li><a href="spacing_options/sp_catch_brace.html">sp_catch_brace</a>: Add or remove space before the <code>{</code> of a <code>catch</code> statement, if the <code>{</code> and  <code>catch</code> are on the same line, as in <code>catch (decl) &lt;here&gt; {</code>.</li>
-<li><a href="spacing_options/sp_catch_paren.html">sp_catch_paren</a>: Add or remove space between <code>catch</code> and <code>(</code> in <code>catch (something) { }</code>. If set to ignore, <a href="sp_before_sparen.md">sp_before_sparen</a> is used.</li>
+<li><a href="spacing_options/sp_catch_paren.html">sp_catch_paren</a>: Add or remove space between <code>catch</code> and <code>(</code> in <code>catch (something) { }</code>. If set to ignore, <a href="spacing_options/sp_before_sparen.html">sp_before_sparen</a> is used.</li>
 <li><a href="spacing_options/sp_cpp_lambda_assign.html">sp_cpp_lambda_assign</a></li>
 <li><a href="spacing_options/sp_cpp_lambda_paren.html">sp_cpp_lambda_paren</a></li>
 <li><a href="spacing_options/sp_else_brace.html">sp_else_brace</a></li>
@@ -123,25 +123,35 @@
 </ul>
 <h1 id="indent">Indent</h1>
 <ul>
-<li><a href="indent_options/indent_align_string.html">indent_align_string</a></li>
-<li><a href="indent_options/indent_xml_string.html">indent_xml_string</a></li>
-<li><a href="indent_options/indent_columns.html">indent_columns</a></li>
-<li><a href="indent_options/indent_with_tabs.html">indent_with_tabs</a></li>
+<li><a href="indent_options/indent_align_string.html">indent_align_string</a>: Whether to indent strings broken by '\' so that they line up.</li>
+<li><a href="indent_options/indent_class.html">indent_class</a>: Whether the '<code>class</code>' body is indented.</li>
+<li><a href="indent_options/indent_columns.html">indent_columns</a>: The number of columns to indent per level.</li>
+<li><a href="indent_options/indent_continue.html">indent_continue</a>: The continuation indent. If non-zero, this overrides the indent of '(', '[' and '=' continuation indents.</li>
+<li><a href="indent_options/indent_constr_colon.html">indent_constr_colon</a>:Whether to indent the stuff after a leading class initializer colon.</li>
+<li><a href="indent_options/indent_namespace.html">indent_namespace</a>: Whether to indent the body of a 'namespace'.</li>
+<li><a href="indent_options/indent_sing_line_comments.html">indent_sing_line_comments</a>: Spaces to indent single line (<code>//</code>) comments on lines before code.</li>
+<li><a href="indent_options/indent_with_tabs.html">indent_with_tabs</a>: How to use tabs when indenting code.</li>
+<li><a href="indent_options/indent_xml_string.html">indent_xml_string</a>: The number of spaces to indent multi-line XML strings.</li>
 </ul>
 <h1 id="newline">Newline</h1>
 <ul>
+<li><a href="newline_options/nl_after_func_body.html">nl_after_func_body</a>: The number of newlines after '}' of a multi-line function body.</li>
+<li><a href="newline_options/nl_after_func_body_one_liner.html">nl_after_func_body_one_liner</a>: The number of newlines after '}' of a single line function body.</li>
+<li><a href="newline_options/nl_after_if.html">nl_after_if</a>: Add or remove blank line after 'if' statement.</li>
 <li><a href="newline_options/nl_brace_else.html">nl_brace_else</a></li>
 <li><a href="newline_options/nl_before_block_comment.html">nl_before_block_comment</a></li>
+<li><a href="newline_options/nl_before_if.html">nl_before_if</a>: Add or remove blank line before 'if'.</li>
 <li><a href="newline_options/nl_catch_brace.html">nl_catch_brace</a></li>
 <li><a href="newline_options/nl_else_brace.html">nl_else_brace</a></li>
 <li><a href="newline_options/nl_elseif_brace.html">nl_elseif_brace</a></li>
-<li><a href="newline_options/nl_for_brace.html">nl_for_brace</a></li>
+<li><a href="newline_options/nl_fdef_brace.html">nl_fdef_brace</a>: Add or remove newline between function signature and <code>{</code>.</li>
+<li><a href="newline_options/nl_for_brace.html">nl_for_brace</a>: Add or remove newline between 'for' and '{'.</li>
 <li><a href="newline_options/nl_if_brace.html">nl_if_brace</a></li>
 <li><a href="newline_options/nl_if_leave_one_liners.html">nl_if_leave_one_liners</a></li>
 <li><a href="newline_options/nl_max.html">nl_max</a></li>
 <li><a href="newline_options/nl_max_blank_in_func.html">nl_max_blank_in_func</a></li>
 <li><a href="newline_options/nl_multi_line_cond.html">nl_multi_line_cond</a></li>
-<li><a href="newline_options/nl_switch_brace.html">nl_switch_brace</a></li>
+<li><a href="newline_options/nl_switch_brace.html">nl_switch_brace</a>: Add or remove newline between 'switch' and '{'.</li>
 </ul>
 <h1 id="other">Other</h1>
 <ul>
@@ -158,7 +168,7 @@
         </footer>
         <script>
             var base_url = ".",
-                shortcuts = {"previous": 80, "help": 191, "search": 83, "next": 78};
+                shortcuts = {"help": 191, "previous": 80, "search": 83, "next": 78};
         </script>
         <script src="js/base.js" defer></script>
         <script src="search/main.js" defer></script>
