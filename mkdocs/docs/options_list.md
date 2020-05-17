@@ -22,12 +22,13 @@
 
 #Indent
 * [indent_align_string](indent_options/indent_align_string.md): Whether to indent strings broken by '\' so that they line up.
-* [indent_xml_string](indent_options/indent_xml_string.md): The number of spaces to indent multi-line XML strings.
+* [indent_class](indent_options/indent_class.md): Whether the 'class' body is indented.
 * [indent_columns](indent_options/indent_columns.md): The number of columns to indent per level.
 * [indent_continue](indent_options/indent_continue.md): The continuation indent. If non-zero, this overrides the indent of '(', '[' and '=' continuation indents.
 * [indent_namespace](indent_options/indent_namespace.md): Whether to indent the body of a 'namespace'.
 * [indent_sing_line_comments](indent_options/indent_sing_line_comments.md): Spaces to indent single line (`//`) comments on lines before code.
 * [indent_with_tabs](indent_options/indent_with_tabs.md): How to use tabs when indenting code.
+* [indent_xml_string](indent_options/indent_xml_string.md): The number of spaces to indent multi-line XML strings.
 
 #Newline
 * [nl_after_func_body](newline_options/nl_after_func_body.md): The number of newlines after '}' of a multi-line function body.
