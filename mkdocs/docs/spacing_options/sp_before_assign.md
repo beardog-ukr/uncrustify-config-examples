@@ -63,5 +63,5 @@ Works like `add` but makes exactly one space.
 
 
 #See also
-* [sp_befor_sparen](sp_before_sparen.md): Add or remove space before `(` of control statements (`if`, `for`, `switch`, `while` etc.).
+* [sp_before_sparen](sp_before_sparen.md): Add or remove space before `(` of control statements (`if`, `for`, `switch`, `while` etc.).
 * [sp_assign](sp_assign.md): Add or remove space around assignment operator '=', '+=', etc.
