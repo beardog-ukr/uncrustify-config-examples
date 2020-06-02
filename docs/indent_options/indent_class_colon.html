@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>sp_brace_catch - Uncrustify Config Examples</title>
+        <title>indent_class_colon - Uncrustify Config Examples</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -80,61 +80,57 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#sp_brace_catch">sp_brace_catch</a></li>
+        <li class="main active"><a href="#indent_class_colon">indent_class_colon</a></li>
         <li class="main "><a href="#examples">Examples</a></li>
-        <li class="main "><a href="#add">add</a></li>
-        <li class="main "><a href="#remove">remove</a></li>
+            <li><a href="#true">true</a></li>
         <li class="main "><a href="#see-also">See also</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="sp_brace_catch">sp_brace_catch</h1>
-<p>Add or remove space between '}' and 'catch' if on the same line.</p>
-<p>Possible values are <em>ignore</em>, <em>add</em>, <em>remove</em> and <em>force</em>. Default <em>ignore</em>.</p>
+<h1 id="indent_class_colon">indent_class_colon</h1>
+<p>Whether to indent the stuff after a leading base class colon.</p>
+<p>Possible values are <em>true</em> or <em>false</em>, default <em>false</em>.</p>
+<p>It seems it only affects class declaration and nothing more.</p>
 <h1 id="examples">Examples</h1>
-<h1 id="add">add</h1>
+<h2 id="true">true</h2>
 <p>Code before:</p>
-<pre><code>try {
-  std::cout &lt;&lt; &quot;Throwing an integer exception...\n&quot;;
-  throw 42;
-}catch (int i) {
-  std::cout &lt;&lt; &quot; the integer exception was caught, with value: &quot; &lt;&lt; i &lt;&lt; '\n';
-}
+<pre><code>class Barrel : Wooden,
+    Round {
+public:
+
+Barrel();
+virtual ~Barrel();
+
+int getWidth() const;
+
+protected:
+int width;
+
+};
 </code></pre>
 
 <p>Code after:</p>
-<pre><code>try {
-  std::cout &lt;&lt; &quot;Throwing an integer exception...\n&quot;;
-  throw 42;
-} catch (int i) {
-  std::cout &lt;&lt; &quot; the integer exception was caught, with value: &quot; &lt;&lt; i &lt;&lt; '\n';
-}
+<pre><code>class Barrel : Wooden,
+           Round {
+public:
+
+Barrel();
+virtual ~Barrel();
+
+int getWidth() const;
+
+protected:
+int width;
+
+};
 </code></pre>
 
-<h1 id="remove">remove</h1>
-<p>Code before:</p>
-<pre><code>try {
-  std::cout &lt;&lt; &quot;Throwing an integer exception...\n&quot;;
-  throw 42;
-} catch (int i) {
-  std::cout &lt;&lt; &quot; the integer exception was caught, with value: &quot; &lt;&lt; i &lt;&lt; '\n';
-}
-</code></pre>
-
-<p>Code after:</p>
-<pre><code>try {
-  std::cout &lt;&lt; &quot;Throwing an integer exception...\n&quot;;
-  throw 42;
-}catch (int i) {
-  std::cout &lt;&lt; &quot; the integer exception was caught, with value: &quot; &lt;&lt; i &lt;&lt; '\n';
-}
-</code></pre>
-
+<p>Note here the word "Round" is aligned.</p>
 <h1 id="see-also">See also</h1>
 <ul>
-<li><a href="sp_catch_brace.html">sp_catch_brace</a> - Add or remove space before the <code>{</code> of a <code>catch</code> statement, if the <code>{</code> and  <code>catch</code> are on the same line, as in <code>catch (decl) &lt;here&gt; {</code>.</li>
-<li><em>sp_oc_catch_brace</em> - (OC) Add or remove space before the '{' of a '@catch' statement, if the '{' and '@catch' are on the same line, as in '@catch (decl) <here> {'. If set to ignore, sp_catch_brace is used.</li>
+<li><a href="indent_class.html">indent_class</a>: Whether the '<code>class</code>' body is indented.</li>
+<li><a href="indent_constr_colon.html">indent_constr_colon</a>: Whether to indent the stuff after a leading class initializer colon.</li>
 </ul></div>
         </div>
 

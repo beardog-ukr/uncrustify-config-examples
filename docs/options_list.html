@@ -106,7 +106,9 @@
 <li><a href="spacing_options/sp_angle_paren_empty.html">sp_angle_paren_empty</a></li>
 <li><a href="spacing_options/sp_angle_shift.html">sp_angle_shift</a></li>
 <li><a href="spacing_options/sp_angle_word.html">sp_angle_word</a></li>
-<li><a href="spacing_options/sp_assign.html">sp_assign</a></li>
+<li><a href="spacing_options/sp_assign.html">sp_assign</a>: Add or remove space around assignment operator '=', '+=', etc.</li>
+<li><a href="spacing_options/sp_after_assign.html">sp_after_assign</a>: Add or remove space after assignment operator '=', '+=', etc.</li>
+<li><a href="spacing_options/sp_before_assign.html">sp_before_assign</a>: Add or remove space before assignment operator '=', '+=', etc.</li>
 <li><a href="spacing_options/sp_before_sparen.html">sp_before_sparen</a>: Add or remove space before <code>(</code> of control statements (<code>if</code>, <code>for</code>, <code>switch</code>, <code>while</code> etc.).</li>
 <li><a href="spacing_options/sp_brace_catch.html">sp_brace_catch</a>: Add or remove space between '}' and 'catch' if on the same line.</li>
 <li><a href="spacing_options/sp_brace_else.html">sp_brace_else</a>: Add or remove space between <code>}</code> and <code>else</code> if on the same line</li>
@@ -125,9 +127,11 @@
 <ul>
 <li><a href="indent_options/indent_align_string.html">indent_align_string</a>: Whether to indent strings broken by '\' so that they line up.</li>
 <li><a href="indent_options/indent_class.html">indent_class</a>: Whether the '<code>class</code>' body is indented.</li>
+<li><a href="indent_options/indent_class_colon.html">indent_class_colon</a>: Whether to indent the stuff after a leading base class colon.</li>
+<li><a href="indent_options/indent_class_on_colon.html">indent_class_on_colon</a>: Whether to indent based on a class colon instead of the stuff after the colon.</li>
 <li><a href="indent_options/indent_columns.html">indent_columns</a>: The number of columns to indent per level.</li>
 <li><a href="indent_options/indent_continue.html">indent_continue</a>: The continuation indent. If non-zero, this overrides the indent of '(', '[' and '=' continuation indents.</li>
-<li><a href="indent_options/indent_constr_colon.html">indent_constr_colon</a>:Whether to indent the stuff after a leading class initializer colon.</li>
+<li><a href="indent_options/indent_constr_colon.html">indent_constr_colon</a>: Whether to indent the stuff after a leading class initializer colon.</li>
 <li><a href="indent_options/indent_namespace.html">indent_namespace</a>: Whether to indent the body of a 'namespace'.</li>
 <li><a href="indent_options/indent_sing_line_comments.html">indent_sing_line_comments</a>: Spaces to indent single line (<code>//</code>) comments on lines before code.</li>
 <li><a href="indent_options/indent_with_tabs.html">indent_with_tabs</a>: How to use tabs when indenting code.</li>
@@ -138,9 +142,11 @@
 <li><a href="newline_options/nl_after_func_body.html">nl_after_func_body</a>: The number of newlines after '}' of a multi-line function body.</li>
 <li><a href="newline_options/nl_after_func_body_one_liner.html">nl_after_func_body_one_liner</a>: The number of newlines after '}' of a single line function body.</li>
 <li><a href="newline_options/nl_after_if.html">nl_after_if</a>: Add or remove blank line after 'if' statement.</li>
+<li><a href="newline_options/nl_after_switch.html">nl_after_switch</a>: Add or remove blank line after <code>switch</code> statement.</li>
 <li><a href="newline_options/nl_brace_else.html">nl_brace_else</a></li>
 <li><a href="newline_options/nl_before_block_comment.html">nl_before_block_comment</a></li>
 <li><a href="newline_options/nl_before_if.html">nl_before_if</a>: Add or remove blank line before 'if'.</li>
+<li><a href="newline_options/nl_before_switch.html">nl_before_switch</a>: Add or remove blank line before <code>switch</code> statement.</li>
 <li><a href="newline_options/nl_catch_brace.html">nl_catch_brace</a></li>
 <li><a href="newline_options/nl_else_brace.html">nl_else_brace</a></li>
 <li><a href="newline_options/nl_elseif_brace.html">nl_elseif_brace</a></li>
@@ -168,7 +174,7 @@
         </footer>
         <script>
             var base_url = ".",
-                shortcuts = {"help": 191, "previous": 80, "search": 83, "next": 78};
+                shortcuts = {"previous": 80, "help": 191, "next": 78, "search": 83};
         </script>
         <script src="js/base.js" defer></script>
         <script src="search/main.js" defer></script>
