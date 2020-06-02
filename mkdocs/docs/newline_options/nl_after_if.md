@@ -2,6 +2,8 @@
 
 Add or remove blank line after 'if' statement. Add/Force work only if the next token is not a closing brace.
 
+Possible values are _ignore_, _add_, _remove_ and _force_, default _ignore_.
+
 #Examples
 
 #Add
