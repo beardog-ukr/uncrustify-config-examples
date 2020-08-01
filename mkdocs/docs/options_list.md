@@ -26,6 +26,9 @@
 * [align_left_shift](indent_options/align_left_shift.md): Whether to align lines that start with '<<' with previous '<<'.
 * [indent_align_string](indent_options/indent_align_string.md): Whether to indent strings broken by '\' so that they line up.
 * [indent_braces](indent_options/indent_braces.md): Whether braces are indented to the body level.
+* [indent_braces_no_func](indent_options/indent_braces_no_func.md): Whether to disable indenting function braces if `indent_braces=true`.
+* [indent_braces_no_class](indent_options/indent_braces_no_class.md): Whether to disable indenting class braces if `indent_braces=true`.
+* [indent_braces_no_struct](indent_options/indent_braces_no_struct.md): Whether to disable indenting struct braces if `indent_braces=true`.
 * [indent_class](indent_options/indent_class.md): Whether the '`class`' body is indented.
 * [indent_class_colon](indent_options/indent_class_colon.md): Whether to indent the stuff after a leading base class colon.
 * [indent_class_on_colon](indent_options/indent_class_on_colon.md): Whether to indent based on a class colon instead of the stuff after the colon.
@@ -73,6 +76,7 @@
 #Bugged options
 Some options do not work (or are too sophisticated to understand how they work):
 
+* [indent_braces_no_class](indent_options/indent_braces_no_class.md)
 * [indent_ctor_init_leading](indent_options/indent_ctor_init_leading.md)
 * [indent_first_for_expr](indent_options/indent_first_for_expr.md)
 * [indent_semicolon_for_paren](indent_options/indent_semicolon_for_paren.md)
