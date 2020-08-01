@@ -31,6 +31,7 @@
 * [indent_columns](indent_options/indent_columns.md): The number of columns to indent per level.
 * [indent_continue](indent_options/indent_continue.md): The continuation indent. If non-zero, this overrides the indent of '(', '[' and '=' continuation indents.
 * [indent_constr_colon](indent_options/indent_constr_colon.md): Whether to indent the stuff after a leading class initializer colon.
+* [indent_ctor_init_leading](indent_options/indent_ctor_init_leading.md): Virtual indent from the ':' for member initializers.
 * [indent_namespace](indent_options/indent_namespace.md): Whether to indent the body of a 'namespace'.
 * [indent_shift](indent_options/indent_shift.md): Whether to indent continued shift expressions ('<<' and '>>') instead of aligning.
 * [indent_sing_line_comments](indent_options/indent_sing_line_comments.md): Spaces to indent single line (`//`) comments on lines before code.
