@@ -23,6 +23,7 @@
 * [sp_try_brace](spacing_options/sp_try_brace.md): Add or remove space between `try` and `{` if on the same line.
 
 #Indent
+* [align_left_shift](indent_options/align_left_shift.md): Whether to align lines that start with '<<' with previous '<<'.
 * [indent_align_string](indent_options/indent_align_string.md): Whether to indent strings broken by '\' so that they line up.
 * [indent_class](indent_options/indent_class.md): Whether the '`class`' body is indented.
 * [indent_class_colon](indent_options/indent_class_colon.md): Whether to indent the stuff after a leading base class colon.
@@ -31,6 +32,7 @@
 * [indent_continue](indent_options/indent_continue.md): The continuation indent. If non-zero, this overrides the indent of '(', '[' and '=' continuation indents.
 * [indent_constr_colon](indent_options/indent_constr_colon.md): Whether to indent the stuff after a leading class initializer colon.
 * [indent_namespace](indent_options/indent_namespace.md): Whether to indent the body of a 'namespace'.
+* [indent_shift](indent_options/indent_shift.md): Whether to indent continued shift expressions ('<<' and '>>') instead of aligning.
 * [indent_sing_line_comments](indent_options/indent_sing_line_comments.md): Spaces to indent single line (`//`) comments on lines before code.
 * [indent_with_tabs](indent_options/indent_with_tabs.md): How to use tabs when indenting code.
 * [indent_xml_string](indent_options/indent_xml_string.md): The number of spaces to indent multi-line XML strings.
