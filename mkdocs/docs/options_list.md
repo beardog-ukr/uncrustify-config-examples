@@ -40,6 +40,7 @@
 * [indent_else_if](indent_options/indent_else_if.md): Whether to indent `if` following `else` as a new block under the `else`.
 * [indent_extern](indent_options/indent_extern.md): Whether the `extern "C"` body is indented.
 * [indent_first_for_expr](indent_options/indent_first_for_expr.md): Whether to align the first expression to following ones if [indent_semicolon_for_paren](indent_semicolon_for_paren.md)=true.
+* [indent_func_call_param](indent_options/indent_func_call_param.md): Whether to indent continued function call parameters one indent level, rather than aligning parameters under the open parenthesis.
 * [indent_namespace](indent_options/indent_namespace.md): Whether to indent the body of a 'namespace'.
 * [indent_semicolon_for_paren](indent_semicolon_for_paren.md): Whether to indent a semicolon when inside a for parenthesis.
 * [indent_shift](indent_options/indent_shift.md): Whether to indent continued shift expressions ('<<' and '>>') instead of aligning.
@@ -82,4 +83,5 @@ Some options do not work (or are too sophisticated to understand how they work):
 * [indent_braces_no_class](indent_options/indent_braces_no_class.md)
 * [indent_ctor_init_leading](indent_options/indent_ctor_init_leading.md)
 * [indent_first_for_expr](indent_options/indent_first_for_expr.md)
+* [indent_func_call_param](indent_options/indent_func_call_param.md)
 * [indent_semicolon_for_paren](indent_options/indent_semicolon_for_paren.md)
