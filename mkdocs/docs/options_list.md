@@ -37,6 +37,7 @@
 * [indent_continue](indent_options/indent_continue.md): The continuation indent. If non-zero, this overrides the indent of '(', '[' and '=' continuation indents.
 * [indent_constr_colon](indent_options/indent_constr_colon.md): Whether to indent the stuff after a leading class initializer colon.
 * [indent_ctor_init_leading](indent_options/indent_ctor_init_leading.md): Virtual indent from the ':' for member initializers.
+* [indent_extern](indent_options/indent_extern.md): Whether the `extern "C"` body is indented.
 * [indent_first_for_expr](indent_options/indent_first_for_expr.md): Whether to align the first expression to following ones if [indent_semicolon_for_paren](indent_semicolon_for_paren.md)=true.
 * [indent_namespace](indent_options/indent_namespace.md): Whether to indent the body of a 'namespace'.
 * [indent_semicolon_for_paren](indent_semicolon_for_paren.md): Whether to indent a semicolon when inside a for parenthesis.
