@@ -25,6 +25,7 @@
 #Indent
 * [align_left_shift](indent_options/align_left_shift.md): Whether to align lines that start with '<<' with previous '<<'.
 * [indent_align_string](indent_options/indent_align_string.md): Whether to indent strings broken by '\' so that they line up.
+* [indent_brace_parent](indent_options/indent_brace_parent.md): Whether to indent based on the size of the brace parent.
 * [indent_braces](indent_options/indent_braces.md): Whether braces are indented to the body level.
 * [indent_braces_no_func](indent_options/indent_braces_no_func.md): Whether to disable indenting function braces if `indent_braces=true`.
 * [indent_braces_no_class](indent_options/indent_braces_no_class.md): Whether to disable indenting class braces if `indent_braces=true`.
