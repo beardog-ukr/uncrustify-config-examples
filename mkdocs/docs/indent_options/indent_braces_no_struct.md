@@ -51,7 +51,7 @@ int boo()
 
 # See also
 
-* [nl_if_brace](../newline_options/nl_if_brace.md): similar option but for `if`
+* [nl_if_brace](../newline_options/nl_if_brace.md): Add or remove newline between 'if' and '{'.
 * [indent_braces](indent_braces.md): Whether braces are indented to the body level.
 * [indent_braces_no_class](indent_braces_no_class.md): Whether to disable indenting class braces if `indent_braces=true`.
 * [indent_braces_no_func](indent_braces_no_func.md): Whether to disable indenting function braces if `indent_braces=true`.
