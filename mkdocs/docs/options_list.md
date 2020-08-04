@@ -26,6 +26,7 @@
 * [align_left_shift](indent_options/align_left_shift.md): Whether to align lines that start with '<<' with previous '<<'.
 * [indent_access_spec](indent_options/indent_access_spec.md): Same as [indent_label](indent_options/indent_label.md), but for access specifiers that are followed by a colon.
 * [indent_access_spec_body](indent_options/indent_access_spec_body.md): Whether to indent the code after an access specifier by one level.
+* [indent_align_assign](indent_options/indent_align_assign.md): Whether to align continued statements at the '='. If false or if the '=' is followed by a newline, the next line is indent one tab.
 * [indent_align_string](indent_options/indent_align_string.md): Whether to indent strings broken by '\' so that they line up.
 * [indent_brace_parent](indent_options/indent_brace_parent.md): Whether to indent based on the size of the brace parent.
 * [indent_braces](indent_options/indent_braces.md): Whether braces are indented to the body level.
@@ -58,6 +59,7 @@
 * [indent_semicolon_for_paren](indent_semicolon_for_paren.md): Whether to indent a semicolon when inside a for parenthesis.
 * [indent_shift](indent_options/indent_shift.md): Whether to indent continued shift expressions ('<<' and '>>') instead of aligning.
 * [indent_sing_line_comments](indent_options/indent_sing_line_comments.md): Spaces to indent single line (`//`) comments on lines before code.
+* [indent_square_nl](indent_options/indent_square_nl.md): If an open square is followed by a newline, whether to indent the next line so that it lines up after the open square (not recommended).
 * [indent_template_param](indent_options/indent_template_param.md): Same as [indent_func_def_param](indent_options/indent_func_def_param.md), but for template parameter lists.
 * [indent_with_tabs](indent_options/indent_with_tabs.md): How to use tabs when indenting code.
 * [indent_xml_string](indent_options/indent_xml_string.md): The number of spaces to indent multi-line XML strings.
@@ -94,6 +96,7 @@
 #Bugged options
 Some options do not work (or are too sophisticated to understand how they work):
 
+* [indent_align_assign](indent_options/indent_align_assign.md)
 * [indent_braces_no_class](indent_options/indent_braces_no_class.md)
 * [indent_ctor_init_leading](indent_options/indent_ctor_init_leading.md)
 * [indent_first_for_expr](indent_options/indent_first_for_expr.md)
