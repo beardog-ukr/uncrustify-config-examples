@@ -24,6 +24,8 @@
 
 #Indent
 * [align_left_shift](indent_options/align_left_shift.md): Whether to align lines that start with '<<' with previous '<<'.
+* [indent_access_spec](indent_options/indent_access_spec.md): Same as [indent_label](indent_options/indent_label.md), but for access specifiers that are followed by a colon.
+* [indent_access_spec_body](indent_options/indent_access_spec_body.md): Whether to indent the code after an access specifier by one level.
 * [indent_align_string](indent_options/indent_align_string.md): Whether to indent strings broken by '\' so that they line up.
 * [indent_brace_parent](indent_options/indent_brace_parent.md): Whether to indent based on the size of the brace parent.
 * [indent_braces](indent_options/indent_braces.md): Whether braces are indented to the body level.
