@@ -51,6 +51,8 @@
 * [indent_func_proto_param](indent_options/indent_func_proto_param.md): Same as [indent_func_call_param](indent_options/indent_func_call_param.md), but for function prototypes.
 * [indent_namespace](indent_options/indent_namespace.md): Whether to indent the body of a 'namespace'.
 * [indent_param](indent_options/indent_param.md): The continuation indent for [func_*_param](indent_options/indent_func_call_param.md) if they are true. If non-zero, this overrides the indent.
+* [indent_paren_close](indent_options/indent_paren_close.md): How to indent a close parenthesis after a newline.
+* [indent_paren_nl](indent_options/indent_paren_nl.md): If an open parenthesis is followed by a newline, whether to indent the next line so that it lines up after the open parenthesis.
 * [indent_relative_single_line_comments](indent_options/indent_relative_single_line_comments.md): Whether to indent trailing single line ('//') comments relative to the code instead of trying to keep the same absolute column.
 * [indent_semicolon_for_paren](indent_semicolon_for_paren.md): Whether to indent a semicolon when inside a for parenthesis.
 * [indent_shift](indent_options/indent_shift.md): Whether to indent continued shift expressions ('<<' and '>>') instead of aligning.
