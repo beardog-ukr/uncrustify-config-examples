@@ -46,6 +46,7 @@
 * [indent_func_def_param](indent_options/indent_func_def_param.md): Same as [indent_func_call_param](indent_options/indent_func_call_param.md), but for function definitions.
 * [indent_func_proto_param](indent_options/indent_func_proto_param.md): Same as [indent_func_call_param](indent_options/indent_func_call_param.md), but for function prototypes.
 * [indent_namespace](indent_options/indent_namespace.md): Whether to indent the body of a 'namespace'.
+* [indent_param](indent_options/indent_param.md): The continuation indent for [func_*_param](indent_options/indent_func_call_param.md) if they are true. If non-zero, this overrides the indent.
 * [indent_semicolon_for_paren](indent_semicolon_for_paren.md): Whether to indent a semicolon when inside a for parenthesis.
 * [indent_shift](indent_options/indent_shift.md): Whether to indent continued shift expressions ('<<' and '>>') instead of aligning.
 * [indent_sing_line_comments](indent_options/indent_sing_line_comments.md): Spaces to indent single line (`//`) comments on lines before code.
