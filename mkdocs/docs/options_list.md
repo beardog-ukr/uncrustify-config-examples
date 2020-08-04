@@ -41,10 +41,15 @@
 * [indent_extern](indent_options/indent_extern.md): Whether the `extern "C"` body is indented.
 * [indent_first_for_expr](indent_options/indent_first_for_expr.md): Whether to align the first expression to following ones if [indent_semicolon_for_paren](indent_semicolon_for_paren.md)=true.
 * [indent_func_call_param](indent_options/indent_func_call_param.md): Whether to indent continued function call parameters one indent level, rather than aligning parameters under the open parenthesis.
+* [indent_func_class_param](indent_func_class_param.md): Same as [indent_func_def_param](indent_options/indent_func_def_param.md), but for class declarations.
+* [indent_func_ctor_var_param](indent_options/indent_func_ctor_var_param.md): Same as [indent_func_def_param](indent_options/indent_func_def_param.md), but for class variable constructors.
+* [indent_func_def_param](indent_options/indent_func_def_param.md): Same as [indent_func_call_param](indent_options/indent_func_call_param.md), but for function definitions.
+* [indent_func_proto_param](indent_options/indent_func_proto_param.md): Same as [indent_func_call_param](indent_options/indent_func_call_param.md), but for function prototypes.
 * [indent_namespace](indent_options/indent_namespace.md): Whether to indent the body of a 'namespace'.
 * [indent_semicolon_for_paren](indent_semicolon_for_paren.md): Whether to indent a semicolon when inside a for parenthesis.
 * [indent_shift](indent_options/indent_shift.md): Whether to indent continued shift expressions ('<<' and '>>') instead of aligning.
 * [indent_sing_line_comments](indent_options/indent_sing_line_comments.md): Spaces to indent single line (`//`) comments on lines before code.
+* [indent_template_param](indent_options/indent_template_param.md): Same as [indent_func_def_param](indent_options/indent_func_def_param.md), but for template parameter lists.
 * [indent_with_tabs](indent_options/indent_with_tabs.md): How to use tabs when indenting code.
 * [indent_xml_string](indent_options/indent_xml_string.md): The number of spaces to indent multi-line XML strings.
 
@@ -83,5 +88,5 @@ Some options do not work (or are too sophisticated to understand how they work):
 * [indent_braces_no_class](indent_options/indent_braces_no_class.md)
 * [indent_ctor_init_leading](indent_options/indent_ctor_init_leading.md)
 * [indent_first_for_expr](indent_options/indent_first_for_expr.md)
-* [indent_func_call_param](indent_options/indent_func_call_param.md)
 * [indent_semicolon_for_paren](indent_options/indent_semicolon_for_paren.md)
+* [indent_template_param](indent_options/indent_template_param.md)
