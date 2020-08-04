@@ -33,6 +33,7 @@
 * [indent_class](indent_options/indent_class.md): Whether the '`class`' body is indented.
 * [indent_class_colon](indent_options/indent_class_colon.md): Whether to indent the stuff after a leading base class colon.
 * [indent_class_on_colon](indent_options/indent_class_on_colon.md): Whether to indent based on a class colon instead of the stuff after the colon.
+* [indent_col1_comment](indent_options/indent_col1_comment.md): Whether to indent comments found in first column.
 * [indent_columns](indent_options/indent_columns.md): The number of columns to indent per level.
 * [indent_continue](indent_options/indent_continue.md): The continuation indent. If non-zero, this overrides the indent of '(', '[' and '=' continuation indents.
 * [indent_constr_colon](indent_options/indent_constr_colon.md): Whether to indent the stuff after a leading class initializer colon.
