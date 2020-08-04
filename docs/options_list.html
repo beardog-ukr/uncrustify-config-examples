@@ -95,6 +95,7 @@
         <li class="main "><a href="#indent">Indent</a></li>
         <li class="main "><a href="#newline">Newline</a></li>
         <li class="main "><a href="#other">Other</a></li>
+        <li class="main "><a href="#bugged-options">Bugged options</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
@@ -125,15 +126,33 @@
 </ul>
 <h1 id="indent">Indent</h1>
 <ul>
+<li><a href="indent_options/align_left_shift.html">align_left_shift</a>: Whether to align lines that start with '&lt;&lt;' with previous '&lt;&lt;'.</li>
 <li><a href="indent_options/indent_align_string.html">indent_align_string</a>: Whether to indent strings broken by '\' so that they line up.</li>
+<li><a href="indent_options/indent_brace_parent.html">indent_brace_parent</a>: Whether to indent based on the size of the brace parent.</li>
+<li><a href="indent_options/indent_braces.html">indent_braces</a>: Whether braces are indented to the body level.</li>
+<li><a href="indent_options/indent_braces_no_func.html">indent_braces_no_func</a>: Whether to disable indenting function braces if <code>indent_braces=true</code>.</li>
+<li><a href="indent_options/indent_braces_no_class.html">indent_braces_no_class</a>: Whether to disable indenting class braces if <code>indent_braces=true</code>.</li>
+<li><a href="indent_options/indent_braces_no_struct.html">indent_braces_no_struct</a>: Whether to disable indenting struct braces if <code>indent_braces=true</code>.</li>
 <li><a href="indent_options/indent_class.html">indent_class</a>: Whether the '<code>class</code>' body is indented.</li>
 <li><a href="indent_options/indent_class_colon.html">indent_class_colon</a>: Whether to indent the stuff after a leading base class colon.</li>
 <li><a href="indent_options/indent_class_on_colon.html">indent_class_on_colon</a>: Whether to indent based on a class colon instead of the stuff after the colon.</li>
 <li><a href="indent_options/indent_columns.html">indent_columns</a>: The number of columns to indent per level.</li>
 <li><a href="indent_options/indent_continue.html">indent_continue</a>: The continuation indent. If non-zero, this overrides the indent of '(', '[' and '=' continuation indents.</li>
 <li><a href="indent_options/indent_constr_colon.html">indent_constr_colon</a>: Whether to indent the stuff after a leading class initializer colon.</li>
+<li><a href="indent_options/indent_ctor_init_leading.html">indent_ctor_init_leading</a>: Virtual indent from the ':' for member initializers.</li>
+<li><a href="indent_options/indent_else_if.html">indent_else_if</a>: Whether to indent <code>if</code> following <code>else</code> as a new block under the <code>else</code>.</li>
+<li><a href="indent_options/indent_extern.html">indent_extern</a>: Whether the <code>extern "C"</code> body is indented.</li>
+<li><a href="indent_options/indent_first_for_expr.html">indent_first_for_expr</a>: Whether to align the first expression to following ones if <a href="indent_semicolon_for_paren.md">indent_semicolon_for_paren</a>=true.</li>
+<li><a href="indent_options/indent_func_call_param.html">indent_func_call_param</a>: Whether to indent continued function call parameters one indent level, rather than aligning parameters under the open parenthesis.</li>
+<li><a href="indent_func_class_param.md">indent_func_class_param</a>: Same as <a href="indent_options/indent_func_def_param.html">indent_func_def_param</a>, but for class declarations.</li>
+<li><a href="indent_options/indent_func_ctor_var_param.html">indent_func_ctor_var_param</a>: Same as <a href="indent_options/indent_func_def_param.html">indent_func_def_param</a>, but for class variable constructors.</li>
+<li><a href="indent_options/indent_func_def_param.html">indent_func_def_param</a>: Same as <a href="indent_options/indent_func_call_param.html">indent_func_call_param</a>, but for function definitions.</li>
+<li><a href="indent_options/indent_func_proto_param.html">indent_func_proto_param</a>: Same as <a href="indent_options/indent_func_call_param.html">indent_func_call_param</a>, but for function prototypes.</li>
 <li><a href="indent_options/indent_namespace.html">indent_namespace</a>: Whether to indent the body of a 'namespace'.</li>
+<li><a href="indent_semicolon_for_paren.md">indent_semicolon_for_paren</a>: Whether to indent a semicolon when inside a for parenthesis.</li>
+<li><a href="indent_options/indent_shift.html">indent_shift</a>: Whether to indent continued shift expressions ('&lt;&lt;' and '&gt;&gt;') instead of aligning.</li>
 <li><a href="indent_options/indent_sing_line_comments.html">indent_sing_line_comments</a>: Spaces to indent single line (<code>//</code>) comments on lines before code.</li>
+<li><a href="indent_options/indent_template_param.html">indent_template_param</a>: Same as <a href="indent_options/indent_func_def_param.html">indent_func_def_param</a>, but for template parameter lists.</li>
 <li><a href="indent_options/indent_with_tabs.html">indent_with_tabs</a>: How to use tabs when indenting code.</li>
 <li><a href="indent_options/indent_xml_string.html">indent_xml_string</a>: The number of spaces to indent multi-line XML strings.</li>
 </ul>
@@ -163,8 +182,19 @@
 <ul>
 <li><a href="other_options/cmt_width.html">cmt_width</a></li>
 <li><a href="other_options/code_width.html">code_width</a></li>
+<li><a href="other_options/disable_processing_cmt.html">disable_processing_cmt</a>: Specify the marker used in comments to disable processing of part of the file</li>
+<li><a href="other_options/enable_processing_cmt.html">enable_processing_cmt</a>: Specify the marker used in comments to (re)enable processing in a file</li>
 <li><a href="other_options/mod_full_brace_if.html">mod_full_brace_if</a></li>
 <li><a href="other_options/mod_full_brace_for.html">mod_full_brace_for</a></li>
+</ul>
+<h1 id="bugged-options">Bugged options</h1>
+<p>Some options do not work (or are too sophisticated to understand how they work):</p>
+<ul>
+<li><a href="indent_options/indent_braces_no_class.html">indent_braces_no_class</a></li>
+<li><a href="indent_options/indent_ctor_init_leading.html">indent_ctor_init_leading</a></li>
+<li><a href="indent_options/indent_first_for_expr.html">indent_first_for_expr</a></li>
+<li><a href="indent_options/indent_semicolon_for_paren.html">indent_semicolon_for_paren</a></li>
+<li><a href="indent_options/indent_template_param.html">indent_template_param</a></li>
 </ul></div>
         </div>
 
@@ -174,7 +204,7 @@
         </footer>
         <script>
             var base_url = ".",
-                shortcuts = {"previous": 80, "help": 191, "next": 78, "search": 83};
+                shortcuts = {"next": 78, "search": 83, "help": 191, "previous": 80};
         </script>
         <script src="js/base.js" defer></script>
         <script src="search/main.js" defer></script>
