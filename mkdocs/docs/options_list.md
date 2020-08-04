@@ -44,6 +44,7 @@
 * [indent_func_class_param](indent_func_class_param.md): Same as [indent_func_def_param](indent_options/indent_func_def_param.md), but for class declarations.
 * [indent_func_ctor_var_param](indent_options/indent_func_ctor_var_param.md): Same as [indent_func_def_param](indent_options/indent_func_def_param.md), but for class variable constructors.
 * [indent_func_def_param](indent_options/indent_func_def_param.md): Same as [indent_func_call_param](indent_options/indent_func_call_param.md), but for function definitions.
+* [indent_func_param_double](indent_options/indent_func_param_double.md): Double the indent for indent_func_xxx_param options. Use both values of the options [indent_columns](indent_options/indent_columns.md) and [indent_param](indent_options/indent_param.md)
 * [indent_func_proto_param](indent_options/indent_func_proto_param.md): Same as [indent_func_call_param](indent_options/indent_func_call_param.md), but for function prototypes.
 * [indent_namespace](indent_options/indent_namespace.md): Whether to indent the body of a 'namespace'.
 * [indent_param](indent_options/indent_param.md): The continuation indent for [func_*_param](indent_options/indent_func_call_param.md) if they are true. If non-zero, this overrides the indent.
