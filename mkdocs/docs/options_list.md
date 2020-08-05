@@ -1,5 +1,8 @@
 # List of options
 
+# Align
+* [align_keep_tabs](align_options/align_keep_tabs.md): Whether to keep non-indenting tabs.
+
 # Spacing
 * [sp_angle_paren](spacing_options/sp_angle_paren.md)
 * [sp_angle_paren_empty](spacing_options/sp_angle_paren_empty.md)
