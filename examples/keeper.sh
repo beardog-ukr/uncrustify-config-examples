@@ -262,6 +262,8 @@ _clean_compiled() {
 # #### #### #### #### #### #### #### #### #### #### #### #### #### ####
 
 _show_diff() {
+  echo "here at _show_diff"
+
   local _cpp_ffn="${_EXAMPLES_FOLDER}/${_EXAMPLE_NAME}/${_EXAMPLE_SUBNAME}.cpp"
   if [ ! -f "${_cpp_ffn}" ]; then
     _debug "Failed to find cpp file '${_cpp_ffn}'\\n"
@@ -329,14 +331,20 @@ _uncrustify_def() {
 ###############################################################################
 
 _check_example() {
-  local _frez=`find ${_EXAMPLES_FOLDER} -type d -name ${_EXAMPLE_NAME}`
+  local ep="${_EXAMPLES_FOLDER}/${_EXAMPLE_NAME}"
 
-  if [ -z "${_frez}" ]; then
+  if [ ! -d "${ep}" ]; then
     _FUNC_ERROR_MSG="Folder with example was not found"
     _debug printf ">> Example name is \"${_EXAMPLE_NAME}\"\\n"
     _debug printf ">> Searched in '$_EXAMPLES_FOLDER'\\n"
+    return 
   fi
-  # echo "like tested and everything is ok"
+
+  if [ -L "${ep}" ]; then
+    _FUNC_ERROR_MSG="Folder with example is a symlink"
+    _debug printf ">> Example name is \"${_EXAMPLE_NAME}\"\\n"
+    _debug printf ">> Searched in '$_EXAMPLES_FOLDER'\\n"
+  fi
 }
 
 ###############################################################################
