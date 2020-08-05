@@ -15,6 +15,7 @@
 * [sp_balance_nested_parens](spacing_options/sp_balance_nested_parens.md): Whether to balance spaces inside nested parentheses.
 * [sp_before_assign](spacing_options/sp_before_assign.md): Add or remove space before assignment operator '=', '+=', etc.
 * [sp_before_sparen](spacing_options/sp_before_sparen.md): Add or remove space before `(` of control statements (`if`, `for`, `switch`, `while` etc.).
+* [sp_before_tr_emb_cmt](spacing_options/sp_before_tr_emb_cmt.md): Add or remove space before a trailing or embedded comment.
 * [sp_brace_catch](spacing_options/sp_brace_catch.md): Add or remove space between '}' and 'catch' if on the same line.
 * [sp_brace_else](spacing_options/sp_brace_else.md): Add or remove space between `}` and `else` if on the same line
 * [sp_catch_brace](spacing_options/sp_catch_brace.md): Add or remove space before the `{` of a `catch` statement, if the `{` and  `catch` are on the same line, as in `catch (decl) <here> {`.
@@ -25,6 +26,7 @@
 * [sp_inside_angle](spacing_options/sp_inside_angle.md)
 * [sp_inside_fparens](spacing_options/sp_inside_fparens.md)
 * [sp_not](spacing_options/sp_not.md)
+* [sp_num_before_tr_emb_cmt](spacing_options/sp_num_before_tr_emb_cmt.md): Number of spaces before a trailing or embedded comment.
 * [sp_permit_cpp11_shift](spacing_options/sp_permit_cpp11_shift.md)
 * [sp_try_brace](spacing_options/sp_try_brace.md): Add or remove space between `try` and `{` if on the same line.
 
