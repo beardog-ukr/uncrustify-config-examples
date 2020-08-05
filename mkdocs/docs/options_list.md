@@ -2,6 +2,8 @@
 
 # Align
 * [align_keep_tabs](align_options/align_keep_tabs.md): Whether to keep non-indenting tabs.
+* [align_same_func_call_params](align_options/align_same_func_call_params.md): Whether to align parameters in single-line functions that have the same name.
+* [align_same_func_call_params_span](align_options/align_same_func_call_params_span.md): The span for aligning function-call parameters for single line functions.
 
 # Spacing
 * [sp_angle_paren](spacing_options/sp_angle_paren.md)
@@ -99,7 +101,7 @@
 
 #Bugged options
 Some options do not work (or are too sophisticated to understand how they work):
-
+* [align_same_func_call_params_span](align_options/align_same_func_call_params_span.md)
 * [indent_align_assign](indent_options/indent_align_assign.md)
 * [indent_braces_no_class](indent_options/indent_braces_no_class.md)
 * [indent_ctor_init_leading](indent_options/indent_ctor_init_leading.md)
