@@ -7,6 +7,7 @@
 * [sp_angle_word](spacing_options/sp_angle_word.md)
 * [sp_assign](spacing_options/sp_assign.md): Add or remove space around assignment operator '=', '+=', etc.
 * [sp_after_assign](spacing_options/sp_after_assign.md): Add or remove space after assignment operator '=', '+=', etc.
+* [sp_balance_nested_parens](spacing_options/sp_balance_nested_parens.md): Whether to balance spaces inside nested parentheses.
 * [sp_before_assign](spacing_options/sp_before_assign.md): Add or remove space before assignment operator '=', '+=', etc.
 * [sp_before_sparen](spacing_options/sp_before_sparen.md): Add or remove space before `(` of control statements (`if`, `for`, `switch`, `while` etc.).
 * [sp_brace_catch](spacing_options/sp_brace_catch.md): Add or remove space between '}' and 'catch' if on the same line.
