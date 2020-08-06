@@ -1,7 +1,7 @@
 # List of options
 
 # Align
-_Note: only few of "align_*" options really work, all other are bugged_
+_Note: only few of "align_&ast;" options really work, all other are bugged_
 
 * [align_keep_tabs](align_options/align_keep_tabs.md): Whether to keep non-indenting tabs.
 * [align_right_cmt_at_col](align_options/align_right_cmt_at_col.md): Minimum column at which to align trailing comments.
@@ -9,6 +9,7 @@ _Note: only few of "align_*" options really work, all other are bugged_
 * [align_right_cmt_span](align_options/align_right_cmt_span.md): The span for aligning comments that end lines.
 * [align_same_func_call_params](align_options/align_same_func_call_params.md): Whether to align parameters in single-line functions that have the same name.
 * [align_same_func_call_params_span](align_options/align_same_func_call_params_span.md): The span for aligning function-call parameters for single line functions.
+* [align_var_def_colon](align_options/align_var_def_colon.md): Whether to align the colon in struct bit fields.
 
 # Spacing
 * [sp_angle_paren](spacing_options/sp_angle_paren.md)
@@ -108,8 +109,10 @@ _Note: only few of "align_*" options really work, all other are bugged_
 
 #Bugged options
 Some options do not work (or are too sophisticated to understand how they work):
+
 * [align_right_cmt_at_col](align_options/align_right_cmt_at_col.md)
 * [align_same_func_call_params_span](align_options/align_same_func_call_params_span.md)
+* [align_var_def_colon](align_options/align_var_def_colon.md)
 * [indent_align_assign](indent_options/indent_align_assign.md)
 * [indent_braces_no_class](indent_options/indent_braces_no_class.md)
 * [indent_ctor_init_leading](indent_options/indent_ctor_init_leading.md)
