@@ -13,6 +13,7 @@ _Note: only few of "align_&ast;" options really work, all other are bugged_
 * [align_var_def_colon](align_options/align_var_def_colon.md): Whether to align the colon in struct bit fields.
 * [align_var_def_inline](align_options/align_var_def_inline.md): Whether to align inline struct/enum/union variable definitions.
 * [align_var_def_span](align_options/align_var_def_span.md): The span for aligning variable definitions.
+* [align_var_def_star_style](align_options/align_var_def_star_style.md): How to consider (or treat) the '&ast;' in the alignment of variable definitions.
 
 # Spacing
 * [sp_angle_paren](spacing_options/sp_angle_paren.md)
