@@ -92,6 +92,7 @@ _Note: only few of "align_&ast;" options really work, all other are bugged_
 * [nl_before_if](newline_options/nl_before_if.md): Add or remove blank line before 'if'.
 * [nl_before_switch](newline_options/nl_before_switch.md): Add or remove blank line before `switch` statement.
 * [nl_catch_brace](newline_options/nl_catch_brace.md)
+* [nl_collapse_empty_body](newline_options/nl_collapse_empty_body.md): Whether to collapse empty blocks between '{' and '}'.
 * [nl_else_brace](newline_options/nl_else_brace.md)
 * [nl_elseif_brace](newline_options/nl_elseif_brace.md)
 * [nl_fdef_brace](newline_options/nl_fdef_brace.md): Add or remove newline between function signature and `{`.
