@@ -84,6 +84,7 @@ _Note: only few of "align\_&ast;" options really work, all other are bugged_.
 
 #Newline
 * [nl_after_brace_open](newline_options/nl_after_brace_open.md): Whether to add a newline after '{'. This also adds a newline before the matching '}'.
+* [nl_after_brace_open_cmt](newline_options/nl_after_brace_open_cmt.md): Whether to add a newline between the open brace and a trailing single-line  comment.
 * [nl_after_case](newline_options/nl_after_case.md): Whether to add a newline after a `case` statement.
 * [nl_after_func_body](newline_options/nl_after_func_body.md): The number of newlines after '}' of a multi-line function body.
 * [nl_after_func_body_one_liner](newline_options/nl_after_func_body_one_liner.md): The number of newlines after '}' of a single line function body.
