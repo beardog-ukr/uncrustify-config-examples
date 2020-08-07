@@ -87,6 +87,7 @@ _Note: only few of "align\_&ast;" options really work, all other are bugged_.
 * [nl_after_func_body](newline_options/nl_after_func_body.md): The number of newlines after '}' of a multi-line function body.
 * [nl_after_func_body_one_liner](newline_options/nl_after_func_body_one_liner.md): The number of newlines after '}' of a single line function body.
 * [nl_after_if](newline_options/nl_after_if.md): Add or remove blank line after 'if' statement.
+* [nl_after_return](newline_options/nl_after_return.md): Whether to put a blank line after `return` statements, unless followed by a close brace.
 * [nl_after_switch](newline_options/nl_after_switch.md): Add or remove blank line after `switch` statement.
 * [nl_assign_leave_one_liners](newline_options/nl_assign_leave_one_liners.md): Don't split one-line braced assignments, as in `foo_t f = { 1, 2 };`.
 * [nl_before_block_comment](newline_options/nl_before_block_comment.md)
