@@ -105,6 +105,7 @@ _Note: only few of "align\_&ast;" options really work, all other are bugged_.
 * [nl_max](newline_options/nl_max.md)
 * [nl_max_blank_in_func](newline_options/nl_max_blank_in_func.md)
 * [nl_multi_line_cond](newline_options/nl_multi_line_cond.md)
+* [nl_multi_line_define](newline_options/nl_multi_line_define.md): Force a newline in a define after the macro name for multi-line defines.
 * [nl_switch_brace](newline_options/nl_switch_brace.md): Add or remove newline between 'switch' and '{'.
 
 #Other
