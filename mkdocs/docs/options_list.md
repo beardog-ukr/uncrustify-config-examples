@@ -99,6 +99,7 @@ _Note: only few of "align\_&ast;" options really work, all other are bugged_.
 * [nl_enum_leave_one_liners](newline_options/nl_enum_leave_one_liners.md): Don't split one-line enums, as in `enum foo { BAR = 15 };`.
 * [nl_fdef_brace](newline_options/nl_fdef_brace.md): Add or remove newline between function signature and `{`.
 * [nl_for_brace](newline_options/nl_for_brace.md): Add or remove newline between 'for' and '{'.
+* [nl_for_leave_one_liners](newline_options/nl_for_leave_one_liners.md): Don't split one-line for statements, as in `for(...) b++;`.
 * [nl_if_brace](newline_options/nl_if_brace.md)
 * [nl_if_leave_one_liners](newline_options/nl_if_leave_one_liners.md)
 * [nl_max](newline_options/nl_max.md)
@@ -131,3 +132,4 @@ Some options do not work (or are too sophisticated to understand how they work):
 * [indent_template_param](indent_options/indent_template_param.md)
 * [nl_assign_leave_one_liners](newline_options/nl_assign_leave_one_liners.md)
 * [nl_enum_leave_one_liners](newline_options/nl_enum_leave_one_liners.md)
+* [nl_for_leave_one_liners](newline_options/nl_for_leave_one_liners.md)
