@@ -88,10 +88,11 @@ _Note: only few of "align\_&ast;" options really work, all other are bugged_.
 * [nl_after_if](newline_options/nl_after_if.md): Add or remove blank line after 'if' statement.
 * [nl_after_switch](newline_options/nl_after_switch.md): Add or remove blank line after `switch` statement.
 * [nl_assign_leave_one_liners](newline_options/nl_assign_leave_one_liners.md): Don't split one-line braced assignments, as in `foo_t f = { 1, 2 };`.
-* [nl_brace_else](newline_options/nl_brace_else.md)
 * [nl_before_block_comment](newline_options/nl_before_block_comment.md)
+* [nl_before_case](newline_options/nl_before_case.md): Whether to add a newline before `case`, and a blank line before a `case` statement that follows a `;` or `}`.
 * [nl_before_if](newline_options/nl_before_if.md): Add or remove blank line before 'if'.
 * [nl_before_switch](newline_options/nl_before_switch.md): Add or remove blank line before `switch` statement.
+* [nl_brace_else](newline_options/nl_brace_else.md): Add or remove newline between `}` and `else`.
 * [nl_catch_brace](newline_options/nl_catch_brace.md)
 * [nl_collapse_empty_body](newline_options/nl_collapse_empty_body.md): Whether to collapse empty blocks between '{' and '}'.
 * [nl_else_brace](newline_options/nl_else_brace.md)
