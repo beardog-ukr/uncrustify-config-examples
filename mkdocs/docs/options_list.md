@@ -85,6 +85,7 @@ _Note: only few of "align\_&ast;" options really work, all other are bugged_.
 #Newline
 * [nl_after_brace_open](newline_options/nl_after_brace_open.md): Whether to add a newline after '{'. This also adds a newline before the matching '}'.
 * [nl_after_brace_open_cmt](newline_options/nl_after_brace_open_cmt.md): Whether to add a newline between the open brace and a trailing single-line  comment.
+* [nl_after_brace_close](newline_options/nl_after_brace_close.md): Whether to add a newline after `}`. Does not apply if followed by a necessary `;`.
 * [nl_after_case](newline_options/nl_after_case.md): Whether to add a newline after a `case` statement.
 * [nl_after_func_body](newline_options/nl_after_func_body.md): The number of newlines after '}' of a multi-line function body.
 * [nl_after_func_body_one_liner](newline_options/nl_after_func_body_one_liner.md): The number of newlines after '}' of a single line function body.
@@ -137,6 +138,7 @@ Some options do not work (or are too sophisticated to understand how they work):
 * [indent_relative_single_line_comments](indent_options/indent_relative_single_line_comments.md)
 * [indent_semicolon_for_paren](indent_options/indent_semicolon_for_paren.md)
 * [indent_template_param](indent_options/indent_template_param.md)
+* [nl_after_brace_close](newline_options/nl_after_brace_close.md)
 * [nl_after semicolon](newline_options/nl_after_semicolon.md)
 * [nl_assign_leave_one_liners](newline_options/nl_assign_leave_one_liners.md)
 * [nl_enum_leave_one_liners](newline_options/nl_enum_leave_one_liners.md)
