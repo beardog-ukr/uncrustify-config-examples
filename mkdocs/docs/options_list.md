@@ -1,7 +1,7 @@
 # List of options
 
 # Align
-_Note: only few of "align_&ast;" options really work, all other are bugged_
+_Note: only few of "align\_&ast;" options really work, all other are bugged_.
 
 * [align_keep_tabs](align_options/align_keep_tabs.md): Whether to keep non-indenting tabs.
 * [align_right_cmt_at_col](align_options/align_right_cmt_at_col.md): Minimum column at which to align trailing comments.
@@ -96,6 +96,7 @@ _Note: only few of "align_&ast;" options really work, all other are bugged_
 * [nl_collapse_empty_body](newline_options/nl_collapse_empty_body.md): Whether to collapse empty blocks between '{' and '}'.
 * [nl_else_brace](newline_options/nl_else_brace.md)
 * [nl_elseif_brace](newline_options/nl_elseif_brace.md)
+* [nl_enum_leave_one_liners](newline_options/nl_enum_leave_one_liners.md): Don't split one-line enums, as in `enum foo { BAR = 15 };`.
 * [nl_fdef_brace](newline_options/nl_fdef_brace.md): Add or remove newline between function signature and `{`.
 * [nl_for_brace](newline_options/nl_for_brace.md): Add or remove newline between 'for' and '{'.
 * [nl_if_brace](newline_options/nl_if_brace.md)
@@ -129,3 +130,4 @@ Some options do not work (or are too sophisticated to understand how they work):
 * [indent_semicolon_for_paren](indent_options/indent_semicolon_for_paren.md)
 * [indent_template_param](indent_options/indent_template_param.md)
 * [nl_assign_leave_one_liners](newline_options/nl_assign_leave_one_liners.md)
+* [nl_enum_leave_one_liners](newline_options/nl_enum_leave_one_liners.md)
