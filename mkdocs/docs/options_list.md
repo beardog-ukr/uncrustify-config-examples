@@ -83,6 +83,7 @@ _Note: only few of "align\_&ast;" options really work, all other are bugged_.
 * [indent_xml_string](indent_options/indent_xml_string.md): The number of spaces to indent multi-line XML strings.
 
 #Newline
+* [nl_after_case](newline_options/nl_after_case.md): Whether to add a newline after a `case` statement.
 * [nl_after_func_body](newline_options/nl_after_func_body.md): The number of newlines after '}' of a multi-line function body.
 * [nl_after_func_body_one_liner](newline_options/nl_after_func_body_one_liner.md): The number of newlines after '}' of a single line function body.
 * [nl_after_if](newline_options/nl_after_if.md): Add or remove blank line after 'if' statement.
