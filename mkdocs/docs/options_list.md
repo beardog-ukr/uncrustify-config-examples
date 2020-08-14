@@ -102,6 +102,7 @@ _Note: only few of "align\_&ast;" options really work, all other are bugged_.
 * [nl_catch_brace](newline_options/nl_catch_brace.md)
 * [nl_collapse_empty_body](newline_options/nl_collapse_empty_body.md): Whether to collapse empty blocks between '{' and '}'.
 * [nl_define_macro](newline_options/nl_define_macro.md): Whether to alter newlines in `#define` macros.
+* [nl_ds_struct_enum_close_brace](newline_options/nl_ds_struct_enum_close_brace.md): Whether to force a newline before '}' of a 'struct'/'union'/'enum'.
 * [nl_ds_struct_enum_cmt](newline_options/nl_ds_struct_enum_cmt.md): Whether to double-space commented-entries in 'struct'/'union'/'enum'.
 * [nl_else_brace](newline_options/nl_else_brace.md)
 * [nl_elseif_brace](newline_options/nl_elseif_brace.md)
