@@ -101,7 +101,8 @@ _Note: only few of "align\_&ast;" options really work, all other are bugged_.
 * [nl_brace_else](newline_options/nl_brace_else.md): Add or remove newline between `}` and `else`.
 * [nl_catch_brace](newline_options/nl_catch_brace.md)
 * [nl_collapse_empty_body](newline_options/nl_collapse_empty_body.md): Whether to collapse empty blocks between '{' and '}'.
-* [nl_create_if_one_liner](newline_options/nl_create_if_one_liner.md): Whether to remove a newline in simple unbraced if statements
+* [nl_create_if_one_liner](newline_options/nl_create_if_one_liner.md): Whether to remove a newline in simple unbraced `if` statements
+* [nl_create_for_one_liner](newline_options/nl_create_for_one_liner.md): Whether to remove a newline in simple unbraced `for` statements.
 * [nl_define_macro](newline_options/nl_define_macro.md): Whether to alter newlines in `#define` macros.
 * [nl_ds_struct_enum_close_brace](newline_options/nl_ds_struct_enum_close_brace.md): Whether to force a newline before '}' of a 'struct'/'union'/'enum'.
 * [nl_ds_struct_enum_cmt](newline_options/nl_ds_struct_enum_cmt.md): Whether to double-space commented-entries in 'struct'/'union'/'enum'.
