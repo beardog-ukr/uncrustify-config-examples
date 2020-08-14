@@ -101,8 +101,9 @@ _Note: only few of "align\_&ast;" options really work, all other are bugged_.
 * [nl_brace_else](newline_options/nl_brace_else.md): Add or remove newline between `}` and `else`.
 * [nl_catch_brace](newline_options/nl_catch_brace.md)
 * [nl_collapse_empty_body](newline_options/nl_collapse_empty_body.md): Whether to collapse empty blocks between '{' and '}'.
-* [nl_create_if_one_liner](newline_options/nl_create_if_one_liner.md): Whether to remove a newline in simple unbraced `if` statements
 * [nl_create_for_one_liner](newline_options/nl_create_for_one_liner.md): Whether to remove a newline in simple unbraced `for` statements.
+* [nl_create_func_def_one_liner](newline_options/nl_create_func_def_one_liner.md): Whether to collapse a function definition whose body (not counting braces) is only one line so that the entire definition (prototype, braces, body) is a single line.
+* [nl_create_if_one_liner](newline_options/nl_create_if_one_liner.md): Whether to remove a newline in simple unbraced `if` statements
 * [nl_create_while_one_liner](newline_options/nl_create_while_one_liner.md): Whether to remove a newline in simple unbraced `while` statements
 * [nl_define_macro](newline_options/nl_define_macro.md): Whether to alter newlines in `#define` macros.
 * [nl_ds_struct_enum_close_brace](newline_options/nl_ds_struct_enum_close_brace.md): Whether to force a newline before '}' of a 'struct'/'union'/'enum'.
