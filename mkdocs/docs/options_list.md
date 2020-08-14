@@ -101,6 +101,7 @@ _Note: only few of "align\_&ast;" options really work, all other are bugged_.
 * [nl_brace_else](newline_options/nl_brace_else.md): Add or remove newline between `}` and `else`.
 * [nl_catch_brace](newline_options/nl_catch_brace.md)
 * [nl_collapse_empty_body](newline_options/nl_collapse_empty_body.md): Whether to collapse empty blocks between '{' and '}'.
+* [nl_define_macro](newline_options/nl_define_macro.md): Whether to alter newlines in `#define` macros.
 * [nl_else_brace](newline_options/nl_else_brace.md)
 * [nl_elseif_brace](newline_options/nl_elseif_brace.md)
 * [nl_enum_leave_one_liners](newline_options/nl_enum_leave_one_liners.md): Don't split one-line enums, as in `enum foo { BAR = 15 };`.
@@ -141,5 +142,6 @@ Some options do not work (or are too sophisticated to understand how they work):
 * [nl_after_brace_close](newline_options/nl_after_brace_close.md)
 * [nl_after semicolon](newline_options/nl_after_semicolon.md)
 * [nl_assign_leave_one_liners](newline_options/nl_assign_leave_one_liners.md)
+* [nl_define_macro](newline_options/nl_define_macro.md)
 * [nl_enum_leave_one_liners](newline_options/nl_enum_leave_one_liners.md)
 * [nl_for_leave_one_liners](newline_options/nl_for_leave_one_liners.md)
