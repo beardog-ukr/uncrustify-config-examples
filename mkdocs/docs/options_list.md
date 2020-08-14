@@ -124,6 +124,7 @@ _Note: only few of "align\_&ast;" options really work, all other are bugged_.
 * [cmt_width](other_options/cmt_width.md)
 * [code_width](other_options/code_width.md)
 * [disable_processing_cmt](other_options/disable_processing_cmt.md): Specify the marker used in comments to disable processing of part of the file
+* [eat_blanks_before_close_brace](other_options/eat_blanks_before_close_brace.md): Whether to remove blank lines before '}'
 * [enable_processing_cmt](other_options/enable_processing_cmt.md): Specify the marker used in comments to (re)enable processing in a file
 * [mod_full_brace_if](other_options/mod_full_brace_if.md)
 * [mod_full_brace_for](other_options/mod_full_brace_for.md)
