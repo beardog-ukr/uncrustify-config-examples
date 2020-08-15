@@ -131,6 +131,7 @@ _Note: only few of "align\_&ast;" options really work, all other are bugged_.
 * [eat_blanks_before_close_brace](other_options/eat_blanks_before_close_brace.md): Whether to remove blank lines before '}'
 * [enable_processing_cmt](other_options/enable_processing_cmt.md): Specify the marker used in comments to (re)enable processing in a file
 * [ls_for_split_full](other_options/ls_for_split_full.md): Whether to fully split long 'for' statements at semi-colons.
+* [ls_func_split_full](other_options/ls_func_split_full.md): Whether to fully split long function prototypes/calls at commas.
 * [mod_full_brace_if](other_options/mod_full_brace_if.md)
 * [mod_full_brace_for](other_options/mod_full_brace_for.md)
 
