@@ -130,6 +130,7 @@ _Note: only few of "align\_&ast;" options really work, all other are bugged_.
 * [disable_processing_cmt](other_options/disable_processing_cmt.md): Specify the marker used in comments to disable processing of part of the file
 * [eat_blanks_before_close_brace](other_options/eat_blanks_before_close_brace.md): Whether to remove blank lines before '}'
 * [enable_processing_cmt](other_options/enable_processing_cmt.md): Specify the marker used in comments to (re)enable processing in a file
+* [ls_code_width](other_options/ls_code_width.md): Whether to split lines as close to code_width as possible and ignore some groupings.
 * [ls_for_split_full](other_options/ls_for_split_full.md): Whether to fully split long 'for' statements at semi-colons.
 * [ls_func_split_full](other_options/ls_func_split_full.md): Whether to fully split long function prototypes/calls at commas.
 * [mod_full_brace_if](other_options/mod_full_brace_if.md)
