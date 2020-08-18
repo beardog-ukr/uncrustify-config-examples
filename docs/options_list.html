@@ -103,7 +103,7 @@
 
 <h1 id="list-of-options">List of options</h1>
 <h1 id="align">Align</h1>
-<p><em>Note: only few of "align</em>*" options really work, all other are bugged_</p>
+<p><em>Note: only few of "align_&ast;" options really work, all other are bugged</em>.</p>
 <ul>
 <li><a href="align_options/align_keep_tabs.html">align_keep_tabs</a>: Whether to keep non-indenting tabs.</li>
 <li><a href="align_options/align_right_cmt_at_col.html">align_right_cmt_at_col</a>: Minimum column at which to align trailing comments.</li>
@@ -111,15 +111,22 @@
 <li><a href="align_options/align_right_cmt_span.html">align_right_cmt_span</a>: The span for aligning comments that end lines.</li>
 <li><a href="align_options/align_same_func_call_params.html">align_same_func_call_params</a>: Whether to align parameters in single-line functions that have the same name.</li>
 <li><a href="align_options/align_same_func_call_params_span.html">align_same_func_call_params_span</a>: The span for aligning function-call parameters for single line functions.</li>
+<li><a href="align_options/align_var_def_amp_style.html">align_var_def_amp_style</a>: How to consider (or treat) the '&amp;' in the alignment of variable definitions.</li>
+<li><a href="align_options/align_var_def_colon.html">align_var_def_colon</a>: Whether to align the colon in struct bit fields.</li>
+<li><a href="align_options/align_var_def_inline.html">align_var_def_inline</a>: Whether to align inline struct/enum/union variable definitions.</li>
+<li><a href="align_options/align_var_def_span.html">align_var_def_span</a>: The span for aligning variable definitions.</li>
+<li><a href="align_options/align_var_def_star_style.html">align_var_def_star_style</a>: How to consider (or treat) the '&ast;' in the alignment of variable definitions.</li>
 </ul>
 <h1 id="spacing">Spacing</h1>
 <ul>
+<li><a href="spacing_options/sp_after_assign.html">sp_after_assign</a>: Add or remove space after assignment operator '=', '+=', etc.</li>
+<li><a href="spacing_options/sp_after_semi.html">sp_after_semi</a>: Add or remove space after <code>;</code>, except when followed by a comment.</li>
+<li><a href="spacing_options/sp_after_semi_for.html">sp_after_semi_for</a>: Add or remove space after <code>;</code> in non-empty <code>for</code> statements.</li>
 <li><a href="spacing_options/sp_angle_paren.html">sp_angle_paren</a></li>
 <li><a href="spacing_options/sp_angle_paren_empty.html">sp_angle_paren_empty</a></li>
 <li><a href="spacing_options/sp_angle_shift.html">sp_angle_shift</a></li>
 <li><a href="spacing_options/sp_angle_word.html">sp_angle_word</a></li>
 <li><a href="spacing_options/sp_assign.html">sp_assign</a>: Add or remove space around assignment operator '=', '+=', etc.</li>
-<li><a href="spacing_options/sp_after_assign.html">sp_after_assign</a>: Add or remove space after assignment operator '=', '+=', etc.</li>
 <li><a href="spacing_options/sp_balance_nested_parens.html">sp_balance_nested_parens</a>: Whether to balance spaces inside nested parentheses.</li>
 <li><a href="spacing_options/sp_before_assign.html">sp_before_assign</a>: Add or remove space before assignment operator '=', '+=', etc.</li>
 <li><a href="spacing_options/sp_before_sparen.html">sp_before_sparen</a>: Add or remove space before <code>(</code> of control statements (<code>if</code>, <code>for</code>, <code>switch</code>, <code>while</code> etc.).</li>
@@ -183,46 +190,90 @@
 </ul>
 <h1 id="newline">Newline</h1>
 <ul>
+<li><a href="newline_options/nl_after_brace_open.html">nl_after_brace_open</a>: Whether to add a newline after '{'. This also adds a newline before the matching '}'.</li>
+<li><a href="newline_options/nl_after_brace_open_cmt.html">nl_after_brace_open_cmt</a>: Whether to add a newline between the open brace and a trailing single-line  comment.</li>
+<li><a href="newline_options/nl_after_brace_close.html">nl_after_brace_close</a>: Whether to add a newline after <code>}</code>. Does not apply if followed by a necessary <code>;</code>.</li>
+<li><a href="newline_options/nl_after_case.html">nl_after_case</a>: Whether to add a newline after a <code>case</code> statement.</li>
 <li><a href="newline_options/nl_after_func_body.html">nl_after_func_body</a>: The number of newlines after '}' of a multi-line function body.</li>
 <li><a href="newline_options/nl_after_func_body_one_liner.html">nl_after_func_body_one_liner</a>: The number of newlines after '}' of a single line function body.</li>
 <li><a href="newline_options/nl_after_if.html">nl_after_if</a>: Add or remove blank line after 'if' statement.</li>
+<li><a href="newline_options/nl_after_multiline_comment.html">nl_after_multiline_comment</a>: Whether to force a newline after a multi-line comment.</li>
+<li><a href="newline_options/nl_after_return.html">nl_after_return</a>: Whether to put a blank line after <code>return</code> statements, unless followed by a close brace.</li>
+<li><a href="newline_options/nl_after_semicolon.html">nl_after semicolon</a>: Whether to add a newline after semicolons, except in <code>for</code> statements.</li>
 <li><a href="newline_options/nl_after_switch.html">nl_after_switch</a>: Add or remove blank line after <code>switch</code> statement.</li>
-<li><a href="newline_options/nl_brace_else.html">nl_brace_else</a></li>
+<li><a href="newline_options/nl_assign_leave_one_liners.html">nl_assign_leave_one_liners</a>: Don't split one-line braced assignments, as in <code>foo_t f = { 1, 2 };</code>.</li>
 <li><a href="newline_options/nl_before_block_comment.html">nl_before_block_comment</a></li>
+<li><a href="newline_options/nl_before_case.html">nl_before_case</a>: Whether to add a newline before <code>case</code>, and a blank line before a <code>case</code> statement that follows a <code>;</code> or <code>}</code>.</li>
 <li><a href="newline_options/nl_before_if.html">nl_before_if</a>: Add or remove blank line before 'if'.</li>
 <li><a href="newline_options/nl_before_switch.html">nl_before_switch</a>: Add or remove blank line before <code>switch</code> statement.</li>
+<li><a href="newline_options/nl_brace_else.html">nl_brace_else</a>: Add or remove newline between <code>}</code> and <code>else</code>.</li>
 <li><a href="newline_options/nl_catch_brace.html">nl_catch_brace</a></li>
+<li><a href="newline_options/nl_collapse_empty_body.html">nl_collapse_empty_body</a>: Whether to collapse empty blocks between '{' and '}'.</li>
+<li><a href="newline_options/nl_create_for_one_liner.html">nl_create_for_one_liner</a>: Whether to remove a newline in simple unbraced <code>for</code> statements.</li>
+<li><a href="newline_options/nl_create_func_def_one_liner.html">nl_create_func_def_one_liner</a>: Whether to collapse a function definition whose body (not counting braces) is only one line so that the entire definition (prototype, braces, body) is a single line.</li>
+<li><a href="newline_options/nl_create_if_one_liner.html">nl_create_if_one_liner</a>: Whether to remove a newline in simple unbraced <code>if</code> statements</li>
+<li><a href="newline_options/nl_create_while_one_liner.html">nl_create_while_one_liner</a>: Whether to remove a newline in simple unbraced <code>while</code> statements</li>
+<li><a href="newline_options/nl_define_macro.html">nl_define_macro</a>: Whether to alter newlines in <code>#define</code> macros.</li>
+<li><a href="newline_options/nl_ds_struct_enum_close_brace.html">nl_ds_struct_enum_close_brace</a>: Whether to force a newline before '}' of a 'struct'/'union'/'enum'.</li>
+<li><a href="newline_options/nl_ds_struct_enum_cmt.html">nl_ds_struct_enum_cmt</a>: Whether to double-space commented-entries in 'struct'/'union'/'enum'.</li>
 <li><a href="newline_options/nl_else_brace.html">nl_else_brace</a></li>
 <li><a href="newline_options/nl_elseif_brace.html">nl_elseif_brace</a></li>
+<li><a href="newline_options/nl_enum_leave_one_liners.html">nl_enum_leave_one_liners</a>: Don't split one-line enums, as in <code>enum foo { BAR = 15 };</code>.</li>
 <li><a href="newline_options/nl_fdef_brace.html">nl_fdef_brace</a>: Add or remove newline between function signature and <code>{</code>.</li>
 <li><a href="newline_options/nl_for_brace.html">nl_for_brace</a>: Add or remove newline between 'for' and '{'.</li>
+<li><a href="newline_options/nl_for_leave_one_liners.html">nl_for_leave_one_liners</a>: Don't split one-line for statements, as in <code>for(...) b++;</code>.</li>
 <li><a href="newline_options/nl_if_brace.html">nl_if_brace</a></li>
 <li><a href="newline_options/nl_if_leave_one_liners.html">nl_if_leave_one_liners</a></li>
 <li><a href="newline_options/nl_max.html">nl_max</a></li>
 <li><a href="newline_options/nl_max_blank_in_func.html">nl_max_blank_in_func</a></li>
 <li><a href="newline_options/nl_multi_line_cond.html">nl_multi_line_cond</a></li>
+<li><a href="newline_options/nl_multi_line_define.html">nl_multi_line_define</a>: Force a newline in a define after the macro name for multi-line defines.</li>
+<li><a href="newline_options/nl_squeeze_ifdef.html">nl_squeeze_ifdef</a>: Whether to remove blanks after <code>#ifxx</code> and <code>#elxx</code>, or before <code>#elxx</code> and <code>#endif</code>.</li>
+<li><a href="newline_options/nl_squeeze_ifdef_top_level.html">nl_squeeze_ifdef_top_level</a>: Makes the <a href="newline_options/nl_squeeze_ifdef.html">nl_squeeze_ifdef</a> option affect the top-level <code>#ifdefs</code> as well.</li>
 <li><a href="newline_options/nl_switch_brace.html">nl_switch_brace</a>: Add or remove newline between 'switch' and '{'.</li>
 </ul>
 <h1 id="other">Other</h1>
 <ul>
 <li><a href="other_options/cmt_width.html">cmt_width</a></li>
-<li><a href="other_options/code_width.html">code_width</a></li>
+<li><a href="other_options/code_width.html">code_width</a>: Try to limit code width to N columns. Break line if it's too long.</li>
 <li><a href="other_options/disable_processing_cmt.html">disable_processing_cmt</a>: Specify the marker used in comments to disable processing of part of the file</li>
+<li><a href="other_options/eat_blanks_after_open_brace.html">eat_blanks_after_open_brace</a>:
+Whether to remove blank lines after <code>{</code>.</li>
+<li><a href="other_options/eat_blanks_before_close_brace.html">eat_blanks_before_close_brace</a>: Whether to remove blank lines before '}'</li>
 <li><a href="other_options/enable_processing_cmt.html">enable_processing_cmt</a>: Specify the marker used in comments to (re)enable processing in a file</li>
+<li><a href="other_options/ls_code_width.html">ls_code_width</a>: Whether to split lines as close to code_width as possible and ignore some groupings.</li>
+<li><a href="other_options/ls_for_split_full.html">ls_for_split_full</a>: Whether to fully split long 'for' statements at semi-colons.</li>
+<li><a href="other_options/ls_func_split_full.html">ls_func_split_full</a>: Whether to fully split long function prototypes/calls at commas.</li>
 <li><a href="other_options/mod_full_brace_if.html">mod_full_brace_if</a></li>
 <li><a href="other_options/mod_full_brace_for.html">mod_full_brace_for</a></li>
+<li><a href="other_options/mod_full_paren_if_bool.html">mod_full_paren_if_bool</a>: Whether to fully parenthesize Boolean expressions in 'while' and 'if' statement.</li>
+<li><a href="other_options/mod_remove_extra_semicolon.html">mod_remove_extra_semicolon</a>: Whether to remove superfluous semicolons.</li>
 </ul>
 <h1 id="bugged-options">Bugged options</h1>
-<p>Some options do not work (or are too sophisticated to understand how they work):
-* <a href="align_options/align_right_cmt_at_col.html">align_right_cmt_at_col</a>
-* <a href="align_options/align_same_func_call_params_span.html">align_same_func_call_params_span</a>
-* <a href="indent_options/indent_align_assign.html">indent_align_assign</a>
-* <a href="indent_options/indent_braces_no_class.html">indent_braces_no_class</a>
-* <a href="indent_options/indent_ctor_init_leading.html">indent_ctor_init_leading</a>
-* <a href="indent_options/indent_first_for_expr.html">indent_first_for_expr</a>
-* <a href="indent_options/indent_relative_single_line_comments.html">indent_relative_single_line_comments</a>
-* <a href="indent_options/indent_semicolon_for_paren.html">indent_semicolon_for_paren</a>
-* <a href="indent_options/indent_template_param.html">indent_template_param</a></p></div>
+<p>Some options do not work (or are too sophisticated to understand how they work):</p>
+<ul>
+<li><a href="align_options/align_right_cmt_at_col.html">align_right_cmt_at_col</a></li>
+<li><a href="align_options/align_same_func_call_params_span.html">align_same_func_call_params_span</a></li>
+<li><a href="align_options/align_var_def_amp_style.html">align_var_def_amp_style</a></li>
+<li><a href="align_options/align_var_def_inline.html">align_var_def_inline</a></li>
+<li><a href="align_options/align_var_def_colon.html">align_var_def_colon</a></li>
+<li><a href="indent_options/indent_align_assign.html">indent_align_assign</a></li>
+<li><a href="indent_options/indent_braces_no_class.html">indent_braces_no_class</a></li>
+<li><a href="indent_options/indent_ctor_init_leading.html">indent_ctor_init_leading</a></li>
+<li><a href="indent_options/indent_first_for_expr.html">indent_first_for_expr</a></li>
+<li><a href="indent_options/indent_relative_single_line_comments.html">indent_relative_single_line_comments</a></li>
+<li><a href="indent_options/indent_semicolon_for_paren.html">indent_semicolon_for_paren</a></li>
+<li><a href="indent_options/indent_template_param.html">indent_template_param</a></li>
+<li><a href="newline_options/nl_after_brace_close.html">nl_after_brace_close</a></li>
+<li><a href="newline_options/nl_after_semicolon.html">nl_after semicolon</a></li>
+<li><a href="newline_options/nl_assign_leave_one_liners.html">nl_assign_leave_one_liners</a></li>
+<li><a href="newline_options/nl_define_macro.html">nl_define_macro</a></li>
+<li><a href="newline_options/nl_ds_struct_enum_cmt.html">nl_ds_struct_enum_cmt</a></li>
+<li><a href="newline_options/nl_enum_leave_one_liners.html">nl_enum_leave_one_liners</a></li>
+<li><a href="newline_options/nl_for_leave_one_liners.html">nl_for_leave_one_liners</a></li>
+<li><a href="other_options/mod_full_paren_if_bool.html">mod_full_paren_if_bool</a></li>
+<li><a href="other_options/mod_remove_extra_semicolon.html">mod_remove_extra_semicolon</a></li>
+</ul></div>
         </div>
 
         <footer class="col-md-12">
@@ -231,7 +282,7 @@
         </footer>
         <script>
             var base_url = ".",
-                shortcuts = {"next": 78, "help": 191, "previous": 80, "search": 83};
+                shortcuts = {"help": 191, "previous": 80, "search": 83, "next": 78};
         </script>
         <script src="js/base.js" defer></script>
         <script src="search/main.js" defer></script>
