@@ -1,6 +1,6 @@
 #mod_remove_extra_semicolon
 
-
+Whether to remove superfluous semicolons.
 
 Possible values are _true_ and _false_, default _false_.
 
