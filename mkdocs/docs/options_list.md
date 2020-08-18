@@ -129,6 +129,8 @@ _Note: only few of "align\_&ast;" options really work, all other are bugged_.
 * [cmt_width](other_options/cmt_width.md)
 * [code_width](other_options/code_width.md): Try to limit code width to N columns. Break line if it's too long.
 * [disable_processing_cmt](other_options/disable_processing_cmt.md): Specify the marker used in comments to disable processing of part of the file
+* [eat_blanks_after_open_brace](other_options/eat_blanks_after_open_brace.md):
+Whether to remove blank lines after `{`.
 * [eat_blanks_before_close_brace](other_options/eat_blanks_before_close_brace.md): Whether to remove blank lines before '}'
 * [enable_processing_cmt](other_options/enable_processing_cmt.md): Specify the marker used in comments to (re)enable processing in a file
 * [ls_code_width](other_options/ls_code_width.md): Whether to split lines as close to code_width as possible and ignore some groupings.
