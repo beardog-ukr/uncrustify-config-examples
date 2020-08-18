@@ -16,12 +16,14 @@ _Note: only few of "align\_&ast;" options really work, all other are bugged_.
 * [align_var_def_star_style](align_options/align_var_def_star_style.md): How to consider (or treat) the '&ast;' in the alignment of variable definitions.
 
 # Spacing
+* [sp_after_assign](spacing_options/sp_after_assign.md): Add or remove space after assignment operator '=', '+=', etc.
+* [sp_after_semi](spacing_options/sp_after_semi.md): Add or remove space after `;`, except when followed by a comment.
+* [sp_after_semi_for](spacing_options/sp_after_semi_for.md): Add or remove space after `;` in non-empty `for` statements.
 * [sp_angle_paren](spacing_options/sp_angle_paren.md)
 * [sp_angle_paren_empty](spacing_options/sp_angle_paren_empty.md)
 * [sp_angle_shift](spacing_options/sp_angle_shift.md)
 * [sp_angle_word](spacing_options/sp_angle_word.md)
 * [sp_assign](spacing_options/sp_assign.md): Add or remove space around assignment operator '=', '+=', etc.
-* [sp_after_assign](spacing_options/sp_after_assign.md): Add or remove space after assignment operator '=', '+=', etc.
 * [sp_balance_nested_parens](spacing_options/sp_balance_nested_parens.md): Whether to balance spaces inside nested parentheses.
 * [sp_before_assign](spacing_options/sp_before_assign.md): Add or remove space before assignment operator '=', '+=', etc.
 * [sp_before_sparen](spacing_options/sp_before_sparen.md): Add or remove space before `(` of control statements (`if`, `for`, `switch`, `while` etc.).
