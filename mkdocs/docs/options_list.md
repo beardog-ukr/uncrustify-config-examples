@@ -90,6 +90,7 @@ _Note: only few of "align\_&ast;" options really work, all other are bugged_.
 * [nl_after_func_body](newline_options/nl_after_func_body.md): The number of newlines after '}' of a multi-line function body.
 * [nl_after_func_body_one_liner](newline_options/nl_after_func_body_one_liner.md): The number of newlines after '}' of a single line function body.
 * [nl_after_if](newline_options/nl_after_if.md): Add or remove blank line after 'if' statement.
+* [nl_after_multiline_comment](newline_options/nl_after_multiline_comment.md): Whether to force a newline after a multi-line comment.
 * [nl_after_return](newline_options/nl_after_return.md): Whether to put a blank line after `return` statements, unless followed by a close brace.
 * [nl_after semicolon](newline_options/nl_after_semicolon.md): Whether to add a newline after semicolons, except in `for` statements.
 * [nl_after_switch](newline_options/nl_after_switch.md): Add or remove blank line after `switch` statement.
