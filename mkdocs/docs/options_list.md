@@ -138,6 +138,7 @@ Whether to remove blank lines after `{`.
 * [ls_func_split_full](other_options/ls_func_split_full.md): Whether to fully split long function prototypes/calls at commas.
 * [mod_full_brace_if](other_options/mod_full_brace_if.md)
 * [mod_full_brace_for](other_options/mod_full_brace_for.md)
+* [mod_remove_extra_semicolon](other_options/mod_remove_extra_semicolon.md): Whether to remove superfluous semicolons.
 
 #Bugged options
 Some options do not work (or are too sophisticated to understand how they work):
@@ -161,3 +162,4 @@ Some options do not work (or are too sophisticated to understand how they work):
 * [nl_ds_struct_enum_cmt](newline_options/nl_ds_struct_enum_cmt.md)
 * [nl_enum_leave_one_liners](newline_options/nl_enum_leave_one_liners.md)
 * [nl_for_leave_one_liners](newline_options/nl_for_leave_one_liners.md)
+* [mod_remove_extra_semicolon](other_options/mod_remove_extra_semicolon.md)
